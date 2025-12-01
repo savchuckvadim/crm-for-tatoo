@@ -3,13 +3,16 @@
     "tasks": {
         "build": {
             "dependsOn": [
-                "^build",
-                "@workspace/api-client#generate"
+                "^build"
             ],
             "outputs": [
                 ".next/**",
                 "dist/**"
             ]
+        },
+        "@workspace/api-client#generate": {
+            "cache": false,
+            "outputs": []
         },
         "generate": {
             "cache": false
