@@ -1,0 +1,24 @@
+{
+    "brand": {
+        "title": "Tattoo CRM",
+        "description": "Hantera din tatueringsstudio. Enkelt."
+    },
+    "product": {
+        "title": "Produkt",
+        "features": "Funktioner",
+        "pricing": "Priser",
+        "register": "Registrera dig"
+    },
+    "resources": {
+        "title": "Resurser",
+        "blog": "Blogg",
+        "contacts": "Kontakter",
+        "artists": "Konstnärer"
+    },
+    "support": {
+        "title": "Support",
+        "contact": "Kontakta oss",
+        "docs": "Dokumentation"
+    },
+    "copyright": "Alla rättigheter förbehållna."
+}

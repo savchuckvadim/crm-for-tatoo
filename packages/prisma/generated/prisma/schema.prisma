@@ -1,0 +1,684 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                String                     @id @default(uuid())
+  email             String                     @unique
+  name              String?
+  surname           String?
+  password          String?
+  displayName       String                     @map("display_name")
+  avatar            String?
+  points            Int                        @default(0)
+  role              UserRole                   @default(USER)
+  passwordReset     PasswordReset?
+  externalAccounts  ExternalAccount[]
+  comments          Comment[]
+  mfa               MultiFactorAuthentication?
+  restrictions      Restriction[]
+  method            AuthMethod                 @default(EMAIL)
+  emailVerified     DateTime?                  @map("email_verified")
+  emailVerification EmailVerification?
+  isEmailVerified   Boolean                    @default(false) @map("is_email_verified")
+  createdAt         DateTime                   @default(now()) @map("created_at")
+  updatedAt         DateTime                   @updatedAt @map("updated_at")
+
+  // CRM relations
+  portalRoles    UserPortalRole[]
+  createdClients Client[]         @relation("ClientCreatedBy")
+  assignedLeads  Lead[]           @relation("LeadAssignedTo")
+  createdLeads   Lead[]           @relation("LeadCreatedBy")
+  assignedDeals  Deal[]           @relation("DealAssignedTo")
+  createdDeals   Deal[]           @relation("DealCreatedBy")
+  appointments   Appointment[]
+  auditLogs      AuditLog[]
+
+  @@map("users")
+}
+
+model ExternalAccount {
+  id                String          @id @default(uuid())
+  provider          AccountProvider
+  providerAccountId String          @unique @map("provider_account_id")
+  refreshToken      String?         @map("refresh_token")
+  accessToken       String?         @map("access_token")
+  expiry            Int?
+  user              User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId            String          @map("user_id")
+  createdAt         DateTime        @default(now()) @map("created_at")
+  updatedAt         DateTime        @updatedAt @map("updated_at")
+
+  @@unique([userId, provider])
+  @@map("external_accounts")
+}
+
+model EmailVerification {
+  id        String                  @id @default(uuid())
+  token     String                  @unique
+  expiry    DateTime?
+  status    EmailVerificationStatus @default(PENDING)
+  user      User                    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    String                  @unique @map("user_id")
+  createdAt DateTime                @default(now()) @map("created_at")
+  updatedAt DateTime                @updatedAt @map("updated_at")
+
+  @@map("email_verification")
+}
+
+model PasswordReset {
+  id String @id @default(uuid())
+
+  token  String   @unique
+  expiry DateTime
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId String @unique @map("user_id")
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("password_resets")
+}
+
+model MultiFactorAuthentication {
+  id String @id @default(uuid())
+
+  // recoveryCodes String[] @default([]) @map("recovery_codes")
+
+  passkeys Passkey[]
+
+  totp   Totp?   @relation(fields: [totpId], references: [id], onDelete: Cascade)
+  totpId String? @unique @map("totp_id")
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId String @unique @map("user_id")
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("multi_factor_authentication")
+}
+
+model Totp {
+  id String @id @default(uuid())
+
+  status TotpStatus @default(DISABLED)
+  secret String?
+
+  mfa MultiFactorAuthentication?
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("totps")
+}
+
+model Passkey {
+  id String @id @default(uuid())
+
+  deviceName String @map("device_name")
+
+  credentialId String @unique @map("credential_id")
+  publicKey    String @map("public_key")
+  counter      Int    @default(0)
+  // transports   String[]
+
+  lastUsedAt DateTime? @map("last_used_at")
+
+  ip        String
+  userAgent String @map("user_agent")
+
+  mfa   MultiFactorAuthentication @relation(fields: [mfaId], references: [id], onDelete: Cascade)
+  mfaId String                    @map("mfa_id")
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("passkeys")
+}
+
+model Restriction {
+  id String @id @default(uuid())
+
+  reason RestrictionReason
+  until  DateTime?
+
+  status RestrictionStatus @default(ACTIVE)
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId String @map("user_id")
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("restrictions")
+}
+
+model Post {
+  id String @id @default(uuid())
+
+  title     String
+  slug      String  @unique
+  thumbnail String?
+
+  content String
+
+  isPublished Boolean @default(false) @map("is_published")
+
+  comments Comment[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("posts")
+}
+
+model Comment {
+  id String @id @default(uuid())
+
+  content String
+
+  edited  Boolean @default(false)
+  deleted Boolean @default(false)
+
+  author   User   @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  authorId String @map("author_id")
+
+  post   Post   @relation(fields: [postId], references: [id], onDelete: Cascade)
+  postId String @map("post_id")
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("comments")
+}
+
+enum UserRole {
+  USER
+  PORTAL_USER
+  ADMIN
+
+  @@map("user_roles")
+}
+
+enum AccountProvider {
+  GOOGLE
+  GITHUB
+
+  @@map("account_providers")
+}
+
+enum EmailVerificationStatus {
+  PENDING
+  VERIFIED
+
+  @@map("email_verification_statuses")
+}
+
+enum TotpStatus {
+  DISABLED
+  PENDING
+  ENABLED
+
+  @@map("totp_statuses")
+}
+
+enum RestrictionReason {
+  INAPPROPRIATE_USERNAME
+  SPAM
+  OFFENSIVE_BEHAVIOR
+
+  @@map("restriction_reasons")
+}
+
+enum RestrictionStatus {
+  ACTIVE
+  EXPIRED
+  CANCELED
+
+  @@map("restriction_statuses")
+}
+
+enum AuthMethod {
+  EMAIL
+  GOOGLE
+  GITHUB
+
+  @@map("auth_methods")
+}
+
+// ========== CRM Models ==========
+
+model Portal {
+  id                 String             @id @default(uuid())
+  name               String
+  subdomain          String?            @unique
+  customDomain       String?            @unique @map("custom_domain")
+  logo               String?
+  primaryColor       String?            @map("primary_color")
+  secondaryColor     String?            @map("secondary_color")
+  settings           Json? // GDPR settings, notifications, etc.
+  subscriptionId     String?            @unique @map("subscription_id")
+  subscriptionStatus SubscriptionStatus @default(TRIAL) @map("subscription_status")
+  trialEndsAt        DateTime?          @map("trial_ends_at")
+  createdAt          DateTime           @default(now()) @map("created_at")
+  updatedAt          DateTime           @updatedAt @map("updated_at")
+
+  // Relations
+  userRoles     UserPortalRole[]
+  clients       Client[]
+  leads         Lead[]
+  deals         Deal[]
+  appointments  Appointment[]
+  products      Product[]
+  customFields  CustomField[]
+  auditLogs     AuditLog[]
+  seoKeywords   SeoKeyword[]
+  seoArticles   SeoArticle[]
+  serpPositions SerpPosition[]
+  integrations  Integration[]
+
+  @@index([subdomain])
+  @@index([customDomain])
+  @@map("portals")
+}
+
+model UserPortalRole {
+  id        String     @id @default(uuid())
+  userId    String     @map("user_id")
+  portalId  String     @map("portal_id")
+  role      PortalRole @default(EMPLOYEE)
+  createdAt DateTime   @default(now()) @map("created_at")
+  updatedAt DateTime   @updatedAt @map("updated_at")
+
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  portal Portal @relation(fields: [portalId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, portalId])
+  @@index([portalId])
+  @@map("user_portal_roles")
+}
+
+model Client {
+  id        String   @id @default(uuid())
+  portalId  String   @map("portal_id")
+  firstName String?  @map("first_name")
+  lastName  String?  @map("last_name")
+  email     String?
+  phone     String?
+  avatar    String?
+  notes     String?  @db.Text
+  metadata  Json? // Additional custom data
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  portal       Portal        @relation(fields: [portalId], references: [id], onDelete: Cascade)
+  createdBy    User?         @relation("ClientCreatedBy", fields: [createdById], references: [id])
+  createdById  String?       @map("created_by_id")
+  deals        Deal[]
+  appointments Appointment[]
+
+  @@index([portalId])
+  @@index([email])
+  @@map("clients")
+}
+
+model Lead {
+  id        String     @id @default(uuid())
+  portalId  String     @map("portal_id")
+  source    LeadSource @default(WEBSITE)
+  status    LeadStatus @default(NEW)
+  firstName String?    @map("first_name")
+  lastName  String?    @map("last_name")
+  email     String?
+  phone     String?
+  notes     String?    @db.Text
+  metadata  Json? // Additional data from forms, integrations
+  createdAt DateTime   @default(now()) @map("created_at")
+  updatedAt DateTime   @updatedAt @map("updated_at")
+
+  // Relations
+  portal       Portal  @relation(fields: [portalId], references: [id], onDelete: Cascade)
+  assignedTo   User?   @relation("LeadAssignedTo", fields: [assignedToId], references: [id])
+  assignedToId String? @map("assigned_to_id")
+  createdBy    User?   @relation("LeadCreatedBy", fields: [createdById], references: [id])
+  createdById  String? @map("created_by_id")
+  deals        Deal[]
+
+  @@index([portalId])
+  @@index([status])
+  @@index([assignedToId])
+  @@map("leads")
+}
+
+model Deal {
+  id                String    @id @default(uuid())
+  portalId          String    @map("portal_id")
+  title             String
+  stage             String // Custom stage name (e.g., "Qualification", "Proposal", "Closed Won")
+  value             Decimal?  @db.Decimal(10, 2)
+  currency          String    @default("EUR")
+  probability       Int?      @default(0) // 0-100
+  expectedCloseDate DateTime? @map("expected_close_date")
+  notes             String?   @db.Text
+  metadata          Json?
+  createdAt         DateTime  @default(now()) @map("created_at")
+  updatedAt         DateTime  @updatedAt @map("updated_at")
+
+  // Relations
+  portal       Portal        @relation(fields: [portalId], references: [id], onDelete: Cascade)
+  client       Client?       @relation(fields: [clientId], references: [id], onDelete: SetNull)
+  clientId     String?       @map("client_id")
+  lead         Lead?         @relation(fields: [leadId], references: [id], onDelete: SetNull)
+  leadId       String?       @map("lead_id")
+  assignedTo   User?         @relation("DealAssignedTo", fields: [assignedToId], references: [id])
+  assignedToId String?       @map("assigned_to_id")
+  createdBy    User?         @relation("DealCreatedBy", fields: [createdById], references: [id])
+  createdById  String?       @map("created_by_id")
+  appointments Appointment[]
+
+  @@index([portalId])
+  @@index([stage])
+  @@index([clientId])
+  @@map("deals")
+}
+
+model Appointment {
+  id                    String            @id @default(uuid())
+  portalId              String            @map("portal_id")
+  title                 String
+  description           String?           @db.Text
+  startTime             DateTime          @map("start_time")
+  endTime               DateTime          @map("end_time")
+  status                AppointmentStatus @default(SCHEDULED)
+  location              String?
+  googleCalendarEventId String?           @map("google_calendar_event_id")
+  reminderSent          Boolean           @default(false) @map("reminder_sent")
+  metadata              Json?
+  createdAt             DateTime          @default(now()) @map("created_at")
+  updatedAt             DateTime          @updatedAt @map("updated_at")
+
+  // Relations
+  portal       Portal   @relation(fields: [portalId], references: [id], onDelete: Cascade)
+  client       Client?  @relation(fields: [clientId], references: [id], onDelete: SetNull)
+  clientId     String?  @map("client_id")
+  deal         Deal?    @relation(fields: [dealId], references: [id], onDelete: SetNull)
+  dealId       String?  @map("deal_id")
+  product      Product? @relation(fields: [productId], references: [id], onDelete: SetNull)
+  productId    String?  @map("product_id")
+  assignedTo   User?    @relation(fields: [assignedToId], references: [id])
+  assignedToId String?  @map("assigned_to_id")
+
+  @@index([portalId])
+  @@index([startTime])
+  @@index([clientId])
+  @@map("appointments")
+}
+
+model Product {
+  id          String   @id @default(uuid())
+  portalId    String   @map("portal_id")
+  name        String
+  description String?  @db.Text
+  category    String?
+  price       Decimal  @db.Decimal(10, 2)
+  currency    String   @default("EUR")
+  duration    Int? // Duration in minutes
+  portfolio   Json? // Array of image URLs
+  isActive    Boolean  @default(true) @map("is_active")
+  metadata    Json?
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  portal       Portal        @relation(fields: [portalId], references: [id], onDelete: Cascade)
+  appointments Appointment[]
+
+  @@index([portalId])
+  @@index([category])
+  @@map("products")
+}
+
+model CustomField {
+  id         String     @id @default(uuid())
+  portalId   String     @map("portal_id")
+  entityType EntityType
+  name       String
+  fieldType  FieldType
+  config     Json? // Options for select, validation rules, etc.
+  isRequired Boolean    @default(false) @map("is_required")
+  order      Int        @default(0)
+  createdAt  DateTime   @default(now()) @map("created_at")
+  updatedAt  DateTime   @updatedAt @map("updated_at")
+
+  // Relations
+  portal Portal             @relation(fields: [portalId], references: [id], onDelete: Cascade)
+  values CustomFieldValue[]
+
+  @@index([portalId, entityType])
+  @@map("custom_fields")
+}
+
+model CustomFieldValue {
+  id         String     @id @default(uuid())
+  fieldId    String     @map("field_id")
+  entityType EntityType @map("entity_type")
+  entityId   String     @map("entity_id")
+  value      Json? // Flexible value storage
+  createdAt  DateTime   @default(now()) @map("created_at")
+  updatedAt  DateTime   @updatedAt @map("updated_at")
+
+  // Relations
+  field CustomField @relation(fields: [fieldId], references: [id], onDelete: Cascade)
+
+  @@unique([fieldId, entityType, entityId])
+  @@index([entityType, entityId])
+  @@map("custom_field_values")
+}
+
+model AuditLog {
+  id         String   @id @default(uuid())
+  portalId   String?  @map("portal_id")
+  userId     String?  @map("user_id")
+  action     String // e.g., "CREATE_CLIENT", "UPDATE_DEAL"
+  entityType String   @map("entity_type")
+  entityId   String   @map("entity_id")
+  changes    Json? // Before/after values
+  ipAddress  String?  @map("ip_address")
+  userAgent  String?  @map("user_agent")
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  // Relations
+  portal Portal? @relation(fields: [portalId], references: [id], onDelete: Cascade)
+  user   User?   @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([portalId])
+  @@index([userId])
+  @@index([entityType, entityId])
+  @@index([createdAt])
+  @@map("audit_logs")
+}
+
+model SeoKeyword {
+  id         String   @id @default(uuid())
+  portalId   String   @map("portal_id")
+  keyword    String
+  language   String   @default("en")
+  volume     Int?
+  difficulty Int?
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  portal        Portal         @relation(fields: [portalId], references: [id], onDelete: Cascade)
+  serpPositions SerpPosition[]
+
+  @@unique([portalId, keyword, language])
+  @@index([portalId])
+  @@map("seo_keywords")
+}
+
+model SeoArticle {
+  id              String   @id @default(uuid())
+  portalId        String   @map("portal_id")
+  title           String
+  slug            String
+  content         String   @db.Text
+  excerpt         String?  @db.Text
+  language        String   @default("en")
+  metaTitle       String?  @map("meta_title")
+  metaDescription String?  @map("meta_description") @db.Text
+  keywords        Json? // Array of keywords
+  faqSchema       Json? // FAQ structured data
+  ogImage         String?  @map("og_image")
+  isPublished     Boolean  @default(false) @map("is_published")
+  aiGenerated     Boolean  @default(false) @map("ai_generated")
+  createdAt       DateTime @default(now()) @map("created_at")
+  updatedAt       DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  portal Portal @relation(fields: [portalId], references: [id], onDelete: Cascade)
+
+  @@unique([portalId, slug, language])
+  @@index([portalId])
+  @@index([isPublished])
+  @@map("seo_articles")
+}
+
+model SerpPosition {
+  id           String   @id @default(uuid())
+  portalId     String   @map("portal_id")
+  keywordId    String   @map("keyword_id")
+  position     Int?
+  url          String?
+  searchEngine String   @default("google") @map("search_engine")
+  country      String?  @default("us")
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  // Relations
+  portal  Portal     @relation(fields: [portalId], references: [id], onDelete: Cascade)
+  keyword SeoKeyword @relation(fields: [keywordId], references: [id], onDelete: Cascade)
+
+  @@index([portalId, keywordId])
+  @@index([createdAt])
+  @@map("serp_positions")
+}
+
+model Integration {
+  id        String          @id @default(uuid())
+  portalId  String          @map("portal_id")
+  type      IntegrationType
+  config    Json // API keys, webhook URLs, etc.
+  isActive  Boolean         @default(true) @map("is_active")
+  createdAt DateTime        @default(now()) @map("created_at")
+  updatedAt DateTime        @updatedAt @map("updated_at")
+
+  // Relations
+  portal Portal @relation(fields: [portalId], references: [id], onDelete: Cascade)
+
+  @@index([portalId, type])
+  @@map("integrations")
+}
+
+// ========== Enums ==========
+
+enum PortalRole {
+  OWNER
+  ADMIN
+  MANAGER
+  EMPLOYEE
+  ACCOUNTANT
+
+  @@map("portal_roles")
+}
+
+enum SubscriptionStatus {
+  TRIAL
+  ACTIVE
+  SUSPENDED
+  CANCELLED
+  EXPIRED
+
+  @@map("subscription_statuses")
+}
+
+enum LeadSource {
+  WEBSITE
+  INSTAGRAM
+  FACEBOOK
+  GOOGLE_ADS
+  REFERRAL
+  PHONE
+  EMAIL
+  OTHER
+
+  @@map("lead_sources")
+}
+
+enum LeadStatus {
+  NEW
+  CONTACTED
+  QUALIFIED
+  CONVERTED
+  LOST
+
+  @@map("lead_statuses")
+}
+
+enum AppointmentStatus {
+  SCHEDULED
+  CONFIRMED
+  COMPLETED
+  CANCELLED
+  NO_SHOW
+
+  @@map("appointment_statuses")
+}
+
+enum EntityType {
+  CLIENT
+  LEAD
+  DEAL
+
+  @@map("entity_types")
+}
+
+enum FieldType {
+  TEXT
+  NUMBER
+  DATE
+  SELECT
+  MULTISELECT
+  BOOLEAN
+  EMAIL
+  PHONE
+  URL
+
+  @@map("field_types")
+}
+
+enum IntegrationType {
+  INSTAGRAM
+  GOOGLE_CALENDAR
+  STRIPE
+  MOLLIE
+  PAYPAL
+  TWILIO
+  SENDGRID
+  GOOGLE_SEARCH_CONSOLE
+
+  @@map("integration_types")
+}

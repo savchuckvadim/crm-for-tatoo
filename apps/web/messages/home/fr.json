@@ -1,0 +1,67 @@
+{
+    "hero": {
+        "title": "Gérez votre studio de tatouage.",
+        "titleHighlight": "Facilement.",
+        "description": "CRM conçu pour les tatoueurs. Tous les clients, rendez-vous et finances en un seul endroit. Optimisez les flux de travail et concentrez-vous sur la créativité.",
+        "ctaPrimary": "Commencer gratuitement",
+        "ctaSecondary": "En savoir plus",
+        "noCreditCard": "Sans carte de crédit • 14 jours gratuits"
+    },
+    "features": {
+        "title": "Fonctionnalités principales",
+        "subtitle": "Optimisez les flux de travail et concentrez-vous sur la créativité avec des outils puissants",
+        "items": {
+            "appointments": {
+                "title": "Réservation en ligne 24/7",
+                "description": "Les clients réservent eux-mêmes pendant que vous créez. Rappels automatiques et synchronisation du calendrier."
+            },
+            "clients": {
+                "title": "Base de données clients",
+                "description": "Toute l'histoire et les préférences des clients à portée de main. Suivez toutes les interactions et créez des expériences personnalisées."
+            },
+            "finance": {
+                "title": "Gestion financière",
+                "description": "Contrôlez les revenus et les dépenses sans effort. Rapports et analyses automatiques."
+            },
+            "marketing": {
+                "title": "Marketing et campagnes",
+                "description": "Envoyez des offres personnalisées, des rappels de rendez-vous et des promotions spéciales à vos clients."
+            },
+            "analytics": {
+                "title": "Analyses et rapports",
+                "description": "Suivez les métriques clés de l'entreprise, analysez les performances et prenez des décisions éclairées."
+            },
+            "seo": {
+                "title": "SEO alimenté par l'IA",
+                "description": "Générez automatiquement du contenu et optimisez votre site Web pour les moteurs de recherche. Plus de clients, moins de travail."
+            }
+        }
+    },
+    "testimonials": {
+        "title": "Ce que disent nos clients",
+        "subtitle": "Plus de 500 studios de tatouage utilisent déjà Tattoo CRM",
+        "items": [
+            {
+                "name": "Anna \"InkMaster\" Ivanova",
+                "role": "Artiste, Studio \"Blackwork Art\"",
+                "content": "Ce CRM a complètement changé mon flux de travail. Maintenant j'ai plus de temps pour la créativité et moins de maux de tête avec l'organisation."
+            },
+            {
+                "name": "Dmitry Sokolov",
+                "role": "Propriétaire, Studio \"Tattoo Studio\"",
+                "content": "L'automatisation des réservations et des notifications nous a fait économiser beaucoup de temps. Les clients sont satisfaits, nous sommes satisfaits."
+            },
+            {
+                "name": "Maria Petrova",
+                "role": "Artiste, Studio \"Color Ink\"",
+                "content": "La comptabilité financière est devenue simple et claire. Maintenant je sais toujours combien j'ai gagné et sur quoi j'ai dépensé."
+            }
+        ]
+    },
+    "cta": {
+        "title": "Prêt à faire passer votre studio au niveau supérieur ?",
+        "description": "Rejoignez des centaines de tatoueurs qui utilisent déjà Tattoo CRM pour gérer leur entreprise.",
+        "register": "S'inscrire",
+        "contact": "Nous contacter"
+    }
+}

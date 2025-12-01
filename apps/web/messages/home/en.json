@@ -1,0 +1,67 @@
+{
+    "hero": {
+        "title": "Manage your tattoo studio.",
+        "titleHighlight": "Easily.",
+        "description": "CRM built for tattoo artists. All clients, appointments, and finances in one place. Optimize workflows and focus on creativity.",
+        "ctaPrimary": "Get Started Free",
+        "ctaSecondary": "Learn More",
+        "noCreditCard": "No credit card • 14 days free"
+    },
+    "features": {
+        "title": "Key Features",
+        "subtitle": "Optimize workflows and focus on creativity with powerful tools",
+        "items": {
+            "appointments": {
+                "title": "24/7 Online Booking",
+                "description": "Clients book themselves while you create. Automatic reminders and calendar sync."
+            },
+            "clients": {
+                "title": "Client Database",
+                "description": "All client history and preferences at your fingertips. Track all interactions and create personalized experiences."
+            },
+            "finance": {
+                "title": "Financial Management",
+                "description": "Control income and expenses effortlessly. Automatic reports and analytics."
+            },
+            "marketing": {
+                "title": "Marketing & Campaigns",
+                "description": "Send personalized offers, appointment reminders, and special promotions to your clients."
+            },
+            "analytics": {
+                "title": "Analytics & Reports",
+                "description": "Track key business metrics, analyze performance, and make informed decisions."
+            },
+            "seo": {
+                "title": "AI-Powered SEO",
+                "description": "Automatically generate content and optimize your website for search engines. More clients, less work."
+            }
+        }
+    },
+    "testimonials": {
+        "title": "What Our Clients Say",
+        "subtitle": "Over 500 tattoo studios already use Tattoo CRM",
+        "items": [
+            {
+                "name": "Anna \"InkMaster\" Ivanova",
+                "role": "Artist, \"Blackwork Art\" Studio",
+                "content": "This CRM completely changed my workflow. Now I have more time for creativity and less headache with organization."
+            },
+            {
+                "name": "Dmitry Sokolov",
+                "role": "Owner, \"Tattoo Studio\"",
+                "content": "Automated booking and notifications saved us a lot of time. Clients are happy, we are happy."
+            },
+            {
+                "name": "Maria Petrova",
+                "role": "Artist, \"Color Ink\" Studio",
+                "content": "Financial accounting became simple and clear. Now I always know how much I earned and what I spent."
+            }
+        ]
+    },
+    "cta": {
+        "title": "Ready to take your studio to the next level?",
+        "description": "Join hundreds of tattoo artists who already use Tattoo CRM to manage their business.",
+        "register": "Sign Up",
+        "contact": "Contact Us"
+    }
+}

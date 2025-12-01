@@ -1,0 +1,2 @@
+/* Импортируем стили из shadcn-components (Tailwind 4) */
+@import '@workspace/shadcn-components/globals.css';

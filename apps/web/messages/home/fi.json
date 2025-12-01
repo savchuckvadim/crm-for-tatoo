@@ -1,0 +1,67 @@
+{
+    "hero": {
+        "title": "Hallitse tatuointistudioasi.",
+        "titleHighlight": "Helposti.",
+        "description": "CRM tatuoijille. Kaikki asiakkaat, varaukset ja talous yhdessä paikassa. Optimoi työnkulut ja keskity luovuuteen.",
+        "ctaPrimary": "Aloita ilmaiseksi",
+        "ctaSecondary": "Lue lisää",
+        "noCreditCard": "Ei luottokorttia • 14 päivää ilmaiseksi"
+    },
+    "features": {
+        "title": "Pääominaisuudet",
+        "subtitle": "Optimoi työnkulut ja keskity luovuuteen tehokkailla työkaluilla",
+        "items": {
+            "appointments": {
+                "title": "24/7 Online-varaus",
+                "description": "Asiakkaat varaavat itse, kun sinä luot. Automaattiset muistutukset ja kalenterisynkronointi."
+            },
+            "clients": {
+                "title": "Asiakastietokanta",
+                "description": "Kaikki asiakashistoria ja mieltymykset käsilläsi. Seuraa kaikkia vuorovaikutuksia ja luo personoituja kokemuksia."
+            },
+            "finance": {
+                "title": "Talouden hallinta",
+                "description": "Hallitse tuloja ja menoja vaivattomasti. Automaattiset raportit ja analyysit."
+            },
+            "marketing": {
+                "title": "Markkinointi ja kampanjat",
+                "description": "Lähetä henkilökohtaisia tarjouksia, varausmuistutuksia ja erikoistarjouksia asiakkailesi."
+            },
+            "analytics": {
+                "title": "Analyysit ja raportit",
+                "description": "Seuraa keskeisiä liiketoimintamittareita, analysoi suorituskykyä ja tee perusteltuja päätöksiä."
+            },
+            "seo": {
+                "title": "AI-pohjainen SEO",
+                "description": "Luo automaattisesti sisältöä ja optimoi verkkosivustosi hakukoneille. Enemmän asiakkaita, vähemmän työtä."
+            }
+        }
+    },
+    "testimonials": {
+        "title": "Mitä asiakkaamme sanovat",
+        "subtitle": "Yli 500 tatuointistudiota käyttää jo Tattoo CRM:ää",
+        "items": [
+            {
+                "name": "Anna \"InkMaster\" Ivanova",
+                "role": "Taiteilija, Studio \"Blackwork Art\"",
+                "content": "Tämä CRM muutti työnkuluni täysin. Nyt minulla on enemmän aikaa luovuudelle ja vähemmän päänsärkyä organisoinnin kanssa."
+            },
+            {
+                "name": "Dmitry Sokolov",
+                "role": "Omistaja, Studio \"Tattoo Studio\"",
+                "content": "Varausten ja ilmoitusten automatisointi säästi meille paljon aikaa. Asiakkaat ovat tyytyväisiä, me olemme tyytyväisiä."
+            },
+            {
+                "name": "Maria Petrova",
+                "role": "Taiteilija, Studio \"Color Ink\"",
+                "content": "Talouden kirjanpito muuttui yksinkertaiseksi ja selkeäksi. Nyt tiedän aina, kuinka paljon olen ansainnut ja mihin olen käyttänyt."
+            }
+        ]
+    },
+    "cta": {
+        "title": "Valmis viemään studiosi seuraavalle tasolle?",
+        "description": "Liity satoihin tatuoijiin, jotka käyttävät jo Tattoo CRM:ää liiketoimintansa hallintaan.",
+        "register": "Rekisteröidy",
+        "contact": "Ota yhteyttä"
+    }
+}

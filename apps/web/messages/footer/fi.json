@@ -1,0 +1,24 @@
+{
+    "brand": {
+        "title": "Tattoo CRM",
+        "description": "Hallitse tatuointistudioasi. Helposti."
+    },
+    "product": {
+        "title": "Tuote",
+        "features": "Ominaisuudet",
+        "pricing": "Hinnat",
+        "register": "Rekisteröidy"
+    },
+    "resources": {
+        "title": "Resurssit",
+        "blog": "Blogi",
+        "contacts": "Yhteystiedot",
+        "artists": "Taiteilijat"
+    },
+    "support": {
+        "title": "Tuki",
+        "contact": "Ota yhteyttä",
+        "docs": "Dokumentaatio"
+    },
+    "copyright": "Kaikki oikeudet pidätetään."
+}

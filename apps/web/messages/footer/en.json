@@ -1,0 +1,24 @@
+{
+    "brand": {
+        "title": "Tattoo CRM",
+        "description": "Manage your tattoo studio. Easily."
+    },
+    "product": {
+        "title": "Product",
+        "features": "Features",
+        "pricing": "Pricing",
+        "register": "Sign Up"
+    },
+    "resources": {
+        "title": "Resources",
+        "blog": "Blog",
+        "contacts": "Contacts",
+        "artists": "Artists"
+    },
+    "support": {
+        "title": "Support",
+        "contact": "Contact Us",
+        "docs": "Documentation"
+    },
+    "copyright": "All rights reserved."
+}

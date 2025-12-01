@@ -1,0 +1,24 @@
+{
+    "brand": {
+        "title": "Tattoo CRM",
+        "description": "Управляй своей тату-студией. Легко."
+    },
+    "product": {
+        "title": "Продукт",
+        "features": "Возможности",
+        "pricing": "Тарифы",
+        "register": "Регистрация"
+    },
+    "resources": {
+        "title": "Ресурсы",
+        "blog": "Блог",
+        "contacts": "Контакты",
+        "artists": "Мастера"
+    },
+    "support": {
+        "title": "Поддержка",
+        "contact": "Связаться с нами",
+        "docs": "Документация"
+    },
+    "copyright": "Все права защищены."
+}

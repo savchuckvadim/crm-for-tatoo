@@ -1,0 +1,24 @@
+{
+    "brand": {
+        "title": "Tattoo CRM",
+        "description": "Beheer je tattoo studio. Eenvoudig."
+    },
+    "product": {
+        "title": "Product",
+        "features": "Functies",
+        "pricing": "Prijzen",
+        "register": "Registreren"
+    },
+    "resources": {
+        "title": "Bronnen",
+        "blog": "Blog",
+        "contacts": "Contacten",
+        "artists": "Artiesten"
+    },
+    "support": {
+        "title": "Ondersteuning",
+        "contact": "Neem contact op",
+        "docs": "Documentatie"
+    },
+    "copyright": "Alle rechten voorbehouden."
+}

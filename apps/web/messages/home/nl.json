@@ -1,0 +1,67 @@
+{
+    "hero": {
+        "title": "Beheer je tattoo studio.",
+        "titleHighlight": "Eenvoudig.",
+        "description": "CRM gemaakt voor tattoo artiesten. Alle klanten, afspraken en financiën op één plek. Optimaliseer workflows en focus op creativiteit.",
+        "ctaPrimary": "Gratis beginnen",
+        "ctaSecondary": "Meer weten",
+        "noCreditCard": "Geen creditcard • 14 dagen gratis"
+    },
+    "features": {
+        "title": "Belangrijkste functies",
+        "subtitle": "Optimaliseer workflows en focus op creativiteit met krachtige tools",
+        "items": {
+            "appointments": {
+                "title": "24/7 Online boeken",
+                "description": "Klanten boeken zelf terwijl jij creëert. Automatische herinneringen en kalendersynchronisatie."
+            },
+            "clients": {
+                "title": "Klantendatabase",
+                "description": "Alle klantgeschiedenis en voorkeuren binnen handbereik. Volg alle interacties en creëer gepersonaliseerde ervaringen."
+            },
+            "finance": {
+                "title": "Financieel beheer",
+                "description": "Beheer inkomsten en uitgaven moeiteloos. Automatische rapporten en analyses."
+            },
+            "marketing": {
+                "title": "Marketing & campagnes",
+                "description": "Stuur gepersonaliseerde aanbiedingen, afspraakherinneringen en speciale acties naar je klanten."
+            },
+            "analytics": {
+                "title": "Analyses & rapporten",
+                "description": "Volg belangrijke bedrijfsmetrieken, analyseer prestaties en neem weloverwogen beslissingen."
+            },
+            "seo": {
+                "title": "AI-aangedreven SEO",
+                "description": "Genereer automatisch content en optimaliseer je website voor zoekmachines. Meer klanten, minder werk."
+            }
+        }
+    },
+    "testimonials": {
+        "title": "Wat onze klanten zeggen",
+        "subtitle": "Meer dan 500 tattoo studios gebruiken al Tattoo CRM",
+        "items": [
+            {
+                "name": "Anna \"InkMaster\" Ivanova",
+                "role": "Artiest, Studio \"Blackwork Art\"",
+                "content": "Deze CRM heeft mijn workflow volledig veranderd. Nu heb ik meer tijd voor creativiteit en minder hoofdpijn met organisatie."
+            },
+            {
+                "name": "Dmitry Sokolov",
+                "role": "Eigenaar, Studio \"Tattoo Studio\"",
+                "content": "Automatisering van boekingen en notificaties heeft ons veel tijd bespaard. Klanten zijn tevreden, wij zijn tevreden."
+            },
+            {
+                "name": "Maria Petrova",
+                "role": "Artiest, Studio \"Color Ink\"",
+                "content": "Financiële boekhouding werd eenvoudig en duidelijk. Nu weet ik altijd hoeveel ik heb verdiend en waar ik aan heb uitgegeven."
+            }
+        ]
+    },
+    "cta": {
+        "title": "Klaar om je studio naar een hoger niveau te tillen?",
+        "description": "Sluit je aan bij honderden tattoo artiesten die al Tattoo CRM gebruiken om hun bedrijf te beheren.",
+        "register": "Registreren",
+        "contact": "Neem contact op"
+    }
+}

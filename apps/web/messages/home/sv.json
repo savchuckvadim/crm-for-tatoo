@@ -1,0 +1,67 @@
+{
+    "hero": {
+        "title": "Hantera din tatueringsstudio.",
+        "titleHighlight": "Enkelt.",
+        "description": "CRM skapad för tatuerare. Alla kunder, bokningar och ekonomi på ett ställe. Optimera arbetsflöden och fokusera på kreativitet.",
+        "ctaPrimary": "Kom igång gratis",
+        "ctaSecondary": "Läs mer",
+        "noCreditCard": "Inget kreditkort • 14 dagar gratis"
+    },
+    "features": {
+        "title": "Huvudfunktioner",
+        "subtitle": "Optimera arbetsflöden och fokusera på kreativitet med kraftfulla verktyg",
+        "items": {
+            "appointments": {
+                "title": "24/7 Onlinebokning",
+                "description": "Kunder bokar själva medan du skapar. Automatiska påminnelser och kalendersynkronisering."
+            },
+            "clients": {
+                "title": "Kunddatabas",
+                "description": "All kundhistorik och preferenser till hands. Spåra alla interaktioner och skapa personliga upplevelser."
+            },
+            "finance": {
+                "title": "Ekonomihantering",
+                "description": "Kontrollera intäkter och utgifter utan ansträngning. Automatiska rapporter och analyser."
+            },
+            "marketing": {
+                "title": "Marknadsföring & kampanjer",
+                "description": "Skicka personliga erbjudanden, bokningspåminnelser och specialerbjudanden till dina kunder."
+            },
+            "analytics": {
+                "title": "Analyser & rapporter",
+                "description": "Spåra viktiga affärsmätvärden, analysera prestanda och fatta välgrundade beslut."
+            },
+            "seo": {
+                "title": "AI-driven SEO",
+                "description": "Generera automatiskt innehåll och optimera din webbplats för sökmotorer. Fler kunder, mindre arbete."
+            }
+        }
+    },
+    "testimonials": {
+        "title": "Vad våra kunder säger",
+        "subtitle": "Över 500 tatueringsstudios använder redan Tattoo CRM",
+        "items": [
+            {
+                "name": "Anna \"InkMaster\" Ivanova",
+                "role": "Konstnär, Studio \"Blackwork Art\"",
+                "content": "Denna CRM har helt förändrat mitt arbetsflöde. Nu har jag mer tid för kreativitet och mindre huvudvärk med organisation."
+            },
+            {
+                "name": "Dmitry Sokolov",
+                "role": "Ägare, Studio \"Tattoo Studio\"",
+                "content": "Automatisering av bokningar och notifikationer har sparat oss mycket tid. Kunderna är nöjda, vi är nöjda."
+            },
+            {
+                "name": "Maria Petrova",
+                "role": "Konstnär, Studio \"Color Ink\"",
+                "content": "Ekonomisk bokföring blev enkelt och tydligt. Nu vet jag alltid hur mycket jag har tjänat och vad jag har spenderat på."
+            }
+        ]
+    },
+    "cta": {
+        "title": "Redo att ta din studio till nästa nivå?",
+        "description": "Gå med hundratals tatuerare som redan använder Tattoo CRM för att hantera sitt företag.",
+        "register": "Registrera dig",
+        "contact": "Kontakta oss"
+    }
+}

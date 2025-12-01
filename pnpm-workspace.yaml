@@ -1,0 +1,19 @@
+packages:
+  - apps/*
+  - packages/*
+
+ignoredBuiltDependencies:
+  - '@nestjs/core'
+  - '@prisma/client'
+  - '@prisma/engines'
+  - '@scarf/scarf'
+  - '@swc/core'
+  - argon2
+  - bcrypt
+  - better-sqlite3
+  - esbuild
+  - msgpackr-extract
+  - prisma
+  - sharp
+  - sqlite3
+  - unrs-resolver

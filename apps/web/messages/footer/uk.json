@@ -1,0 +1,24 @@
+{
+    "brand": {
+        "title": "Tattoo CRM",
+        "description": "Керуй своєю тату-студією. Легко."
+    },
+    "product": {
+        "title": "Продукт",
+        "features": "Можливості",
+        "pricing": "Тарифи",
+        "register": "Реєстрація"
+    },
+    "resources": {
+        "title": "Ресурси",
+        "blog": "Блог",
+        "contacts": "Контакти",
+        "artists": "Майстри"
+    },
+    "support": {
+        "title": "Підтримка",
+        "contact": "Зв'язатися з нами",
+        "docs": "Документація"
+    },
+    "copyright": "Всі права захищені."
+}
