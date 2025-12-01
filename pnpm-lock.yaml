@@ -784,6 +784,9 @@ importers:
       '@workspace/shadcn-components':
         specifier: workspace:*
         version: link:../shadcn-components
+      class-variance-authority:
+        specifier: ^0.7.1
+        version: 0.7.1
       react:
         specifier: ^19.0.0
         version: 19.2.0
