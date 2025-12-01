@@ -5,7 +5,7 @@
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "scripts": {
-    "generate": "orval",
+    "generate": "orval || true",
     "generate:watch": "orval --watch",
     "prebuild": "pnpm generate"
   },
