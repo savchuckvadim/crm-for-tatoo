@@ -4,7 +4,12 @@ import { Testimonials } from '@/components/sections/testimonials';
 import { CTA } from '@/components/sections/cta';
 import { generateMetadata as generateSEOMetadata } from '@/lib/seo/metadata';
 import { SITE_CONFIG } from '@/lib/constants';
+import { locales } from '@/i18n';
 import type { Metadata } from 'next';
+
+export async function generateStaticParams() {
+    return locales.map((locale) => ({ locale }));
+}
 
 export async function generateMetadata({
     params,

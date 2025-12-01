@@ -59,7 +59,8 @@
         },
         "./components/SplashCursor": {
             "import": "./src/components/SplashCursor.jsx",
-            "types": "./src/components/SplashCursor.jsx"
+            "types": "./src/components/SplashCursor.d.ts",
+            "default": "./src/components/SplashCursor.jsx"
         }
     }
 }

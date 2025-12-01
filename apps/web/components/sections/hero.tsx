@@ -1,9 +1,18 @@
 'use client';
 
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { useTranslations, useLocale } from 'next-intl';
 import { SimpleButton } from '@workspace/ui';
-import SplashCursor from '@workspace/shadcn-components/components/SplashCursor';
+
+// Динамический импорт SplashCursor для избежания проблем с SSR
+const SplashCursor = dynamic(
+    () => import('@workspace/shadcn-components/components/SplashCursor').then((mod) => ({ default: mod.default || mod })),
+    {
+        ssr: false,
+        loading: () => null,
+    }
+);
 
 export function Hero() {
     const t = useTranslations('home.hero');

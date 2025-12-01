@@ -1,14 +1,18 @@
-import { locales } from '@/i18n';
+import { locales, defaultLocale } from '@/i18n';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { ThemeProvider } from '@/components/providers/theme-provider';
 import { NextIntlClientProvider } from 'next-intl';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { JsonLd } from '@/components/seo/json-ld';
 import {
     generateOrganizationSchema,
     generateProductSchema,
 } from '@/lib/seo/schema';
+
+export async function generateStaticParams() {
+    return locales.map((locale) => ({ locale }));
+}
 
 export default async function LocaleLayout({
     children,
@@ -28,10 +32,10 @@ export default async function LocaleLayout({
     try {
         // Загружаем сообщения по модулям
         const [common, navigation, home, footer] = await Promise.all([
-            import(`@/messages/${locale}.json`).then((m) => m.default),
-            import(`@/messages/navigation/${locale}.json`).then((m) => m.default),
-            import(`@/messages/home/${locale}.json`).then((m) => m.default),
-            import(`@/messages/footer/${locale}.json`).then((m) => m.default),
+            import(`@/messages/${locale}.json`).then((m) => m.default).catch(() => ({ common: { brand: { title: 'Tattoo CRM', description: '' } } })),
+            import(`@/messages/navigation/${locale}.json`).then((m) => m.default).catch(() => ({})),
+            import(`@/messages/home/${locale}.json`).then((m) => m.default).catch(() => ({})),
+            import(`@/messages/footer/${locale}.json`).then((m) => m.default).catch(() => ({})),
         ]);
 
         messages = {
@@ -42,6 +46,10 @@ export default async function LocaleLayout({
         };
     } catch (error) {
         console.error('Error loading messages:', error);
+        // Fallback на дефолтную локаль при ошибке
+        if (locale !== defaultLocale) {
+            redirect(`/${defaultLocale}`);
+        }
         notFound();
     }
 
