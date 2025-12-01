@@ -18,6 +18,7 @@
         "@types/react-dom": "^19",
         "@workspace/eslint-config": "workspace:*",
         "@workspace/typescript-config": "workspace:*",
+        "@workspace/shadcn-components": "workspace:*",
         "typescript": "^5.7.3"
     },
     "exports": {

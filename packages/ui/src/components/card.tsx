@@ -7,7 +7,7 @@ import {
   CardContent,
   CardFooter,
   CardAction,
-} from '@workspace/shadcn-components/components/card';
+} from '@workspace/shadcn-components/src/components/card';
 
 export interface SimpleCardProps {
   title?: string;
@@ -20,11 +20,11 @@ export interface SimpleCardProps {
 
 /**
  * SimpleCard - упрощенная карточка, скрывающая сложность shadcn компонентов
- * 
+ *
  * @example
  * ```tsx
- * <SimpleCard 
- *   title="Заголовок" 
+ * <SimpleCard
+ *   title="Заголовок"
  *   description="Описание"
  *   action={<Button>Действие</Button>}
  * >
