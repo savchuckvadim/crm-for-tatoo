@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button as ShadcnButton } from '@workspace/shadcn-components/src/components/button';
+import { Button as ShadcnButton } from '@workspace/shadcn-components/components/button';
 
 type ShadcnButtonProps = React.ComponentPropsWithoutRef<typeof ShadcnButton>;
 
@@ -55,7 +55,7 @@ export function SimpleButton({
 /**
  * Button - реэкспорт shadcn Button для прямого использования
  */
-export { Button } from '@workspace/shadcn-components/src/components/button';
+export { Button } from '@workspace/shadcn-components/components/button';
 
 export type ButtonProps = React.ComponentPropsWithoutRef<typeof ShadcnButton>;
 
