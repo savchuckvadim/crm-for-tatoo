@@ -3,9 +3,22 @@
         "title": "Beheer je tattoo studio.",
         "titleHighlight": "Eenvoudig.",
         "description": "CRM gemaakt voor tattoo artiesten. Alle klanten, afspraken en financiën op één plek. Optimaliseer workflows en focus op creativiteit.",
+        "tagline": "InkSpace — de werkruimte voor tattoo meesters.",
         "ctaPrimary": "Gratis beginnen",
         "ctaSecondary": "Meer weten",
         "noCreditCard": "Geen creditcard • 14 dagen gratis"
+    },
+    "taglines": {
+        "1": "Jouw studio. Jouw ruimte. Jouw flow.",
+        "2": "Waar tattoo studios soepel draaien.",
+        "3": "De slimme ruimte voor je tattoo bedrijf.",
+        "4": "Alles wat je studio nodig heeft — in één ruimte.",
+        "5": "De kernruimte van je tattoo studio.",
+        "6": "Organiseer je tattoos. Laat je studio groeien.",
+        "7": "Eén ruimte. Eindeloze mogelijkheden.",
+        "8": "Tattoo bedrijf, eindelijk onder controle.",
+        "9": "InkSpace — de werkruimte voor tattoo meesters.",
+        "10": "Jouw alles-in-één ruimte voor tattoo beheer."
     },
     "features": {
         "title": "Belangrijkste functies",

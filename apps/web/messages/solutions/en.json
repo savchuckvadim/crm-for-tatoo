@@ -1,0 +1,162 @@
+{
+    "tattoo-artists": {
+        "title": "CRM for Tattoo Artists",
+        "subtitle": "Everything you need to manage your tattoo business",
+        "description": "Manage clients, appointments, and finances as a tattoo artist. Focus on your art while we handle the business side.",
+        "features": {
+            "title": "Perfect for Independent Artists",
+            "items": [
+                {
+                    "title": "Client Management",
+                    "description": "Keep track of all your clients, their preferences, and tattoo history in one place."
+                },
+                {
+                    "title": "Appointment Scheduling",
+                    "description": "Let clients book appointments 24/7. Automatic reminders reduce no-shows."
+                },
+                {
+                    "title": "Financial Tracking",
+                    "description": "Track income, expenses, and generate reports automatically."
+                },
+                {
+                    "title": "Portfolio Management",
+                    "description": "Showcase your work and let clients browse your portfolio online."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "Why Choose InkSpace?",
+            "items": [
+                "Save 10+ hours per week on administrative tasks",
+                "Never miss an appointment with automatic reminders",
+                "Professional client management system",
+                "Mobile-friendly - manage on the go"
+            ]
+        },
+        "cta": {
+            "title": "Start Your Free Trial",
+            "description": "No credit card required. 14 days free trial.",
+            "button": "Get Started"
+        }
+    },
+    "studio-owners": {
+        "title": "CRM for Studio Owners",
+        "subtitle": "Manage multiple artists and locations efficiently",
+        "description": "Manage multiple artists and locations. Streamline operations, track performance, and grow your tattoo studio business.",
+        "features": {
+            "title": "Built for Studio Management",
+            "items": [
+                {
+                    "title": "Multi-Artist Management",
+                    "description": "Manage schedules, clients, and performance for all your artists."
+                },
+                {
+                    "title": "Location Management",
+                    "description": "Handle multiple studio locations from one dashboard."
+                },
+                {
+                    "title": "Revenue Analytics",
+                    "description": "Track revenue by artist, location, and service type."
+                },
+                {
+                    "title": "Team Collaboration",
+                    "description": "Share client information and coordinate schedules across your team."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "Why Choose InkSpace?",
+            "items": [
+                "Scale your studio operations effortlessly",
+                "Real-time insights into business performance",
+                "Centralized management for all locations",
+                "Automated reporting saves hours weekly"
+            ]
+        },
+        "cta": {
+            "title": "Start Your Free Trial",
+            "description": "No credit card required. 14 days free trial.",
+            "button": "Get Started"
+        }
+    },
+    "freelancers": {
+        "title": "CRM for Freelancers",
+        "subtitle": "Simple solution for independent tattoo artists",
+        "description": "Simple solution for independent tattoo artists. All the tools you need without the complexity.",
+        "features": {
+            "title": "Perfect for Solo Artists",
+            "items": [
+                {
+                    "title": "Easy Setup",
+                    "description": "Get started in minutes. No complex configuration needed."
+                },
+                {
+                    "title": "Affordable Pricing",
+                    "description": "Plans designed for independent artists with transparent pricing."
+                },
+                {
+                    "title": "Essential Features",
+                    "description": "Everything you need: clients, appointments, and finances."
+                },
+                {
+                    "title": "Mobile App",
+                    "description": "Manage your business from anywhere with our mobile-friendly interface."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "Why Choose InkSpace?",
+            "items": [
+                "Affordable pricing for independent artists",
+                "Simple, intuitive interface",
+                "No long-term contracts",
+                "Perfect for artists just starting out"
+            ]
+        },
+        "cta": {
+            "title": "Start Your Free Trial",
+            "description": "No credit card required. 14 days free trial.",
+            "button": "Get Started"
+        }
+    },
+    "multi-location-studios": {
+        "title": "CRM for Multi-Location Studios",
+        "subtitle": "Manage multiple studios from one place",
+        "description": "Manage multiple studios from one place. Centralized control, local flexibility, and enterprise-grade features.",
+        "features": {
+            "title": "Enterprise Features",
+            "items": [
+                {
+                    "title": "Centralized Dashboard",
+                    "description": "Monitor all locations from one comprehensive dashboard."
+                },
+                {
+                    "title": "Location-Specific Settings",
+                    "description": "Customize settings, pricing, and services for each location."
+                },
+                {
+                    "title": "Cross-Location Analytics",
+                    "description": "Compare performance across locations and identify opportunities."
+                },
+                {
+                    "title": "Unified Branding",
+                    "description": "Maintain consistent branding and client experience across all locations."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "Why Choose InkSpace?",
+            "items": [
+                "Scale to unlimited locations",
+                "Enterprise-grade security and reliability",
+                "Dedicated account management",
+                "Custom integrations available"
+            ]
+        },
+        "cta": {
+            "title": "Start Your Free Trial",
+            "description": "No credit card required. 14 days free trial.",
+            "button": "Get Started"
+        }
+    }
+}

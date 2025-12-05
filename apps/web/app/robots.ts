@@ -14,7 +14,8 @@ export default function robots(): MetadataRoute.Robots {
                     '/dashboard',
                     '/portal/*',
                     '/_next/',
-                    '/book', // Registration/login pages can be noindexed if needed
+                    '/auth/login', // Authentication pages can be noindexed if needed
+                    '/auth/register',
                 ],
             },
         ],

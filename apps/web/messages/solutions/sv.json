@@ -1,0 +1,162 @@
+{
+    "tattoo-artists": {
+        "title": "CRM för Tatuerare",
+        "subtitle": "Allt du behöver för att hantera ditt tatueringsföretag",
+        "description": "Hantera kunder, bokningar och ekonomi som tatuerare. Fokusera på din konst medan vi hanterar affärssidan.",
+        "features": {
+            "title": "Perfekt för Oberoende Konstnärer",
+            "items": [
+                {
+                    "title": "Kundhantering",
+                    "description": "Håll koll på alla dina kunder, deras preferenser och tatueringshistorik på ett ställe."
+                },
+                {
+                    "title": "Bokningsplanering",
+                    "description": "Låt kunder boka möten 24/7. Automatiska påminnelser minskar no-shows."
+                },
+                {
+                    "title": "Ekonomisk Spårning",
+                    "description": "Spåra intäkter, utgifter och generera rapporter automatiskt."
+                },
+                {
+                    "title": "Portfoliohantering",
+                    "description": "Visa ditt arbete och låt kunder bläddra i ditt portfolio online."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "Varför välja InkSpace?",
+            "items": [
+                "Spara 10+ timmar per vecka på administrativa uppgifter",
+                "Missa aldrig ett möte med automatiska påminnelser",
+                "Professionellt kundhanteringssystem",
+                "Mobilvänligt - hantera på språng"
+            ]
+        },
+        "cta": {
+            "title": "Starta din Gratis Provperiod",
+            "description": "Inget kreditkort krävs. 14 dagars gratis provperiod.",
+            "button": "Kom igång"
+        }
+    },
+    "studio-owners": {
+        "title": "CRM för Studioägare",
+        "subtitle": "Hantera flera konstnärer och platser effektivt",
+        "description": "Hantera flera konstnärer och platser. Effektivisera verksamheten, spåra prestanda och väx ditt tatueringsstudioföretag.",
+        "features": {
+            "title": "Byggt för Studiohantering",
+            "items": [
+                {
+                    "title": "Multi-Konstnärshantering",
+                    "description": "Hantera scheman, kunder och prestanda för alla dina konstnärer."
+                },
+                {
+                    "title": "Platshantering",
+                    "description": "Hantera flera studiokontor från en instrumentpanel."
+                },
+                {
+                    "title": "Intäktsanalys",
+                    "description": "Spåra intäkter per konstnär, plats och servicetyp."
+                },
+                {
+                    "title": "Teamsamarbete",
+                    "description": "Dela kundinformation och koordinera scheman i hela ditt team."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "Varför välja InkSpace?",
+            "items": [
+                "Skala dina studioverksamheter utan ansträngning",
+                "Realtidsinsikter i affärsprestanda",
+                "Centraliserad hantering för alla platser",
+                "Automatiserad rapportering sparar timmar varje vecka"
+            ]
+        },
+        "cta": {
+            "title": "Starta din Gratis Provperiod",
+            "description": "Inget kreditkort krävs. 14 dagars gratis provperiod.",
+            "button": "Kom igång"
+        }
+    },
+    "freelancers": {
+        "title": "CRM för Frilansare",
+        "subtitle": "Enkel lösning för oberoende tatuerare",
+        "description": "Enkel lösning för oberoende tatuerare. Alla verktyg du behöver utan komplexiteten.",
+        "features": {
+            "title": "Perfekt för Solo-Konstnärer",
+            "items": [
+                {
+                    "title": "Enkel Installation",
+                    "description": "Kom igång på minuter. Ingen komplex konfiguration behövs."
+                },
+                {
+                    "title": "Prisvärd Prisättning",
+                    "description": "Planer designade för oberoende konstnärer med transparent prissättning."
+                },
+                {
+                    "title": "Väsentliga Funktioner",
+                    "description": "Allt du behöver: kunder, bokningar och ekonomi."
+                },
+                {
+                    "title": "Mobilapp",
+                    "description": "Hantera ditt företag var som helst med vårt mobilvänliga gränssnitt."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "Varför välja InkSpace?",
+            "items": [
+                "Prisvärd prissättning för oberoende konstnärer",
+                "Enkelt, intuitivt gränssnitt",
+                "Inga långsiktiga kontrakt",
+                "Perfekt för konstnärer som precis börjar"
+            ]
+        },
+        "cta": {
+            "title": "Starta din Gratis Provperiod",
+            "description": "Inget kreditkort krävs. 14 dagars gratis provperiod.",
+            "button": "Kom igång"
+        }
+    },
+    "multi-location-studios": {
+        "title": "CRM för Multiplatsstudios",
+        "subtitle": "Hantera flera studios från en plats",
+        "description": "Hantera flera studios från en plats. Centraliserad kontroll, lokal flexibilitet och funktioner på företagsnivå.",
+        "features": {
+            "title": "Företagsfunktioner",
+            "items": [
+                {
+                    "title": "Centraliserad Instrumentpanel",
+                    "description": "Övervaka alla platser från en omfattande instrumentpanel."
+                },
+                {
+                    "title": "Platsspecifika Inställningar",
+                    "description": "Anpassa inställningar, priser och tjänster för varje plats."
+                },
+                {
+                    "title": "Tvärplatsanalys",
+                    "description": "Jämför prestanda mellan platser och identifiera möjligheter."
+                },
+                {
+                    "title": "Enhetlig Varumärkesprofil",
+                    "description": "Behåll konsekvent varumärkesprofil och kundupplevelse på alla platser."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "Varför välja InkSpace?",
+            "items": [
+                "Skala till obegränsade platser",
+                "Säkerhet och tillförlitlighet på företagsnivå",
+                "Dedikerad kontohantering",
+                "Anpassade integrationer tillgängliga"
+            ]
+        },
+        "cta": {
+            "title": "Starta din Gratis Provperiod",
+            "description": "Inget kreditkort krävs. 14 dagars gratis provperiod.",
+            "button": "Kom igång"
+        }
+    }
+}

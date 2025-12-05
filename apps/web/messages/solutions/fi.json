@@ -1,0 +1,162 @@
+{
+    "tattoo-artists": {
+        "title": "CRM tatuoijille",
+        "subtitle": "Kaikki mitä tarvitset tatuointiliiketoiminnan hallintaan",
+        "description": "Hallitse asiakkaita, varauksia ja taloutta tatuoijana. Keskity taiteeseesi, kun me hoidamme liiketoiminnan puolen.",
+        "features": {
+            "title": "Täydellinen itsenäisille taiteilijoille",
+            "items": [
+                {
+                    "title": "Asiakashallinta",
+                    "description": "Pidä kirjaa kaikista asiakkaistasi, heidän mieltymyksistään ja tatuointihistoriasta yhdessä paikassa."
+                },
+                {
+                    "title": "Aikataulutus",
+                    "description": "Anna asiakkaiden varata aikoja 24/7. Automaattiset muistutukset vähentävät poissaoloja."
+                },
+                {
+                    "title": "Talouden seuranta",
+                    "description": "Seuraa tuloja, menoja ja luo raportteja automaattisesti."
+                },
+                {
+                    "title": "Portfolion hallinta",
+                    "description": "Näytä työsi ja anna asiakkaiden selata portfolioasi verkossa."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "Miksi valita InkSpace?",
+            "items": [
+                "Säästä 10+ tuntia viikossa hallinnollisiin tehtäviin",
+                "Älä koskaan missaa tapaamista automaattisten muistutusten avulla",
+                "Ammattimainen asiakashallintajärjestelmä",
+                "Mobiilimukainen - hallitse matkalla"
+            ]
+        },
+        "cta": {
+            "title": "Aloita ilmainen kokeilujakso",
+            "description": "Luottokorttia ei vaadita. 14 päivän ilmainen kokeilujakso.",
+            "button": "Aloita"
+        }
+    },
+    "studio-owners": {
+        "title": "CRM studiomistajille",
+        "subtitle": "Hallitse useita taiteilijoita ja sijainteja tehokkaasti",
+        "description": "Hallitse useita taiteilijoita ja sijainteja. Tehosta toimintaa, seuraa suorituskykyä ja kasvata tatuointistudiosi liiketoimintaa.",
+        "features": {
+            "title": "Rakennettu studion hallintaan",
+            "items": [
+                {
+                    "title": "Monen taiteilijan hallinta",
+                    "description": "Hallitse aikatauluja, asiakkaita ja suorituskykyä kaikille taiteilijoillesi."
+                },
+                {
+                    "title": "Sijainnin hallinta",
+                    "description": "Hallitse useita studion sijainteja yhdestä kojetaulusta."
+                },
+                {
+                    "title": "Tulojen analysointi",
+                    "description": "Seuraa tuloja taiteilijan, sijainnin ja palvelutyypin mukaan."
+                },
+                {
+                    "title": "Tiimin yhteistyö",
+                    "description": "Jaa asiakastietoja ja koordinoi aikatauluja tiimisi kesken."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "Miksi valita InkSpace?",
+            "items": [
+                "Skaalaa studion toimintasi vaivattomasti",
+                "Reaaliaikaiset näkemykset liiketoiminnan suorituskykyyn",
+                "Keskitetty hallinta kaikille sijainneille",
+                "Automatisoitu raportointi säästää tunteja viikoittain"
+            ]
+        },
+        "cta": {
+            "title": "Aloita ilmainen kokeilujakso",
+            "description": "Luottokorttia ei vaadita. 14 päivän ilmainen kokeilujakso.",
+            "button": "Aloita"
+        }
+    },
+    "freelancers": {
+        "title": "CRM freelancereille",
+        "subtitle": "Yksinkertainen ratkaisu itsenäisille tatuoijille",
+        "description": "Yksinkertainen ratkaisu itsenäisille tatuoijille. Kaikki tarvitsemasi työkalut ilman monimutkaisuutta.",
+        "features": {
+            "title": "Täydellinen soolo-taiteilijoille",
+            "items": [
+                {
+                    "title": "Helppo asennus",
+                    "description": "Aloita minuuteissa. Ei monimutkaista konfiguraatiota tarvita."
+                },
+                {
+                    "title": "Edullinen hinnoittelu",
+                    "description": "Suunnitelmat itsenäisille taiteilijoille läpinäkyvällä hinnoittelulla."
+                },
+                {
+                    "title": "Olennaiset ominaisuudet",
+                    "description": "Kaikki mitä tarvitset: asiakkaat, varaukset ja talous."
+                },
+                {
+                    "title": "Mobiilisovellus",
+                    "description": "Hallitse liiketoimintaasi mistä tahansa mobiilimukaisella käyttöliittymällämme."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "Miksi valita InkSpace?",
+            "items": [
+                "Edullinen hinnoittelu itsenäisille taiteilijoille",
+                "Yksinkertainen, intuitiivinen käyttöliittymä",
+                "Ei pitkäaikaisia sopimuksia",
+                "Täydellinen juuri aloittaville taiteilijoille"
+            ]
+        },
+        "cta": {
+            "title": "Aloita ilmainen kokeilujakso",
+            "description": "Luottokorttia ei vaadita. 14 päivän ilmainen kokeilujakso.",
+            "button": "Aloita"
+        }
+    },
+    "multi-location-studios": {
+        "title": "CRM usean sijainnin studioille",
+        "subtitle": "Hallitse useita studioita yhdestä paikasta",
+        "description": "Hallitse useita studioita yhdestä paikasta. Keskitetty kontrolli, paikallinen joustavuus ja yritystason ominaisuudet.",
+        "features": {
+            "title": "Yritystason ominaisuudet",
+            "items": [
+                {
+                    "title": "Keskitetty kojetaulu",
+                    "description": "Seuraa kaikkia sijainteja yhdestä kattavasta kojetaulusta."
+                },
+                {
+                    "title": "Sijaintikohtaiset asetukset",
+                    "description": "Mukauta asetuksia, hintoja ja palveluja kullekin sijainnille."
+                },
+                {
+                    "title": "Sijaintien välinen analysointi",
+                    "description": "Vertaa suorituskykyä sijaintien välillä ja tunnista mahdollisuudet."
+                },
+                {
+                    "title": "Yhtenäinen brändäys",
+                    "description": "Ylläpidä johdonmukaista brändäystä ja asiakaskokemusta kaikissa sijainneissa."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "Miksi valita InkSpace?",
+            "items": [
+                "Skaalaa rajoittamattomaan määrään sijainteja",
+                "Yritystason turvallisuus ja luotettavuus",
+                "Dedikoidtu tilihallinta",
+                "Mukautetut integraatiot saatavilla"
+            ]
+        },
+        "cta": {
+            "title": "Aloita ilmainen kokeilujakso",
+            "description": "Luottokorttia ei vaadita. 14 päivän ilmainen kokeilujakso.",
+            "button": "Aloita"
+        }
+    }
+}

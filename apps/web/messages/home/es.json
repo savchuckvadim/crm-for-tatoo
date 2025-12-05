@@ -3,9 +3,22 @@
         "title": "Gestiona tu estudio de tatuajes.",
         "titleHighlight": "Fácilmente.",
         "description": "CRM creada para tatuadores. Todos los clientes, citas y finanzas en un solo lugar. Optimiza los flujos de trabajo y concéntrate en la creatividad.",
+        "tagline": "InkSpace — el espacio de trabajo para maestros del tatuaje.",
         "ctaPrimary": "Comenzar gratis",
         "ctaSecondary": "Saber más",
         "noCreditCard": "Sin tarjeta de crédito • 14 días gratis"
+    },
+    "taglines": {
+        "1": "Tu estudio. Tu espacio. Tu flujo.",
+        "2": "Donde los estudios de tatuajes funcionan sin problemas.",
+        "3": "El espacio inteligente para tu negocio de tatuajes.",
+        "4": "Todo lo que tu estudio necesita — en un solo espacio.",
+        "5": "El espacio central de tu estudio de tatuajes.",
+        "6": "Organiza tus tatuajes. Haz crecer tu estudio.",
+        "7": "Un espacio. Posibilidades infinitas.",
+        "8": "Negocio de tatuajes, finalmente bajo control.",
+        "9": "InkSpace — el espacio de trabajo para maestros del tatuaje.",
+        "10": "Tu espacio todo-en-uno para la gestión de tatuajes."
     },
     "features": {
         "title": "Características principales",

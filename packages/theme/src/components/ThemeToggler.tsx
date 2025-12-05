@@ -1,6 +1,7 @@
 'use client';
 // import { ColorScheme, ColorSchemes } from '../provider/Theme';
 import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 // import { useColorScheme } from '../hook/useColorScheme';
 // import { JSX, useState } from 'react'
 // import { Dice1, Dice2, Dice3, Dice4, Dice5, Dice6, MoonStar, Palette, Sparkles, SunDim } from 'lucide-react'
@@ -21,9 +22,15 @@ import { ColorSchemePicker } from './ColorSchemePicker';
 // }
 
 export const ThemeToggler = () => {
-    const { theme, setTheme } = useTheme();
+    const { theme, setTheme, resolvedTheme } = useTheme();
+    const [mounted, setMounted] = useState(false);
     // const { scheme, setScheme } = useColorScheme()
     // const [isSpinning, setIsSpinning] = useState(false)
+
+    // Предотвращаем гидратацию, рендерим только после монтирования
+    useEffect(() => {
+        setMounted(true);
+    }, []);
 
     const toggleTheme = () => {
         setTheme(theme === 'dark' ? 'light' : 'dark');
@@ -48,6 +55,25 @@ export const ThemeToggler = () => {
     //   return <DiceIcon  className={`cursor-pointer w-3 h-3 ${isSpinning ? 'animate-spin' : ''}`} />
     // })()
 
+    // Используем resolvedTheme для определения реальной темы (light/dark), а не 'system'
+    const currentTheme = resolvedTheme || theme || 'light';
+    const isDark = currentTheme === 'dark';
+
+    // Пока компонент не смонтирован, рендерим placeholder с suppressHydrationWarning
+    if (!mounted) {
+        return (
+            <div className="flex items-center gap-1 text-foreground">
+                <button
+                    className="cursor-pointer transition-transform duration-300"
+                    suppressHydrationWarning
+                >
+                    <SunDim size={20} />
+                </button>
+                <ColorSchemePicker />
+            </div>
+        );
+    }
+
     return (
         <div className="flex items-center gap-1 text-foreground ">
             {/* Кнопка переключения темы */}
@@ -55,7 +81,7 @@ export const ThemeToggler = () => {
                 onClick={toggleTheme}
                 className="cursor-pointer transition-transform duration-300"
             >
-                {theme === 'dark' ? (
+                {isDark ? (
                     <MoonStar size={20} />
                 ) : (
                     <SunDim size={20} />

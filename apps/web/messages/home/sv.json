@@ -3,9 +3,22 @@
         "title": "Hantera din tatueringsstudio.",
         "titleHighlight": "Enkelt.",
         "description": "CRM skapad för tatuerare. Alla kunder, bokningar och ekonomi på ett ställe. Optimera arbetsflöden och fokusera på kreativitet.",
+        "tagline": "InkSpace — arbetsytan för tatueringsmästare.",
         "ctaPrimary": "Kom igång gratis",
         "ctaSecondary": "Läs mer",
         "noCreditCard": "Inget kreditkort • 14 dagar gratis"
+    },
+    "taglines": {
+        "1": "Din studio. Ditt utrymme. Din flöde.",
+        "2": "Där tatueringsstudior fungerar smidigt.",
+        "3": "Det smarta utrymmet för din tatuering verksamhet.",
+        "4": "Allt din studio behöver — på ett ställe.",
+        "5": "Det centrala utrymmet för din tatueringsstudio.",
+        "6": "Organisera dina tatueringar. Väx din studio.",
+        "7": "Ett utrymme. Oändliga möjligheter.",
+        "8": "Tatueringsverksamhet, äntligen under kontroll.",
+        "9": "InkSpace — arbetsytan för tatueringsmästare.",
+        "10": "Ditt allt-i-ett-utrymme för tatueringshantering."
     },
     "features": {
         "title": "Huvudfunktioner",

@@ -1,0 +1,30 @@
+{
+    "login": {
+        "title": "Se Connecter",
+        "subtitle": "Bon retour ! Veuillez vous connecter à votre compte.",
+        "email": "E-mail",
+        "password": "Mot de passe",
+        "remember": "Se souvenir de moi",
+        "forgotPassword": "Mot de passe oublié ?",
+        "submit": "Se Connecter",
+        "noAccount": "Vous n'avez pas de compte ?",
+        "signUp": "S'inscrire",
+        "or": "Ou continuer avec"
+    },
+    "register": {
+        "title": "Créer un Compte",
+        "subtitle": "Commencez votre essai gratuit. Aucune carte de crédit requise.",
+        "name": "Nom Complet",
+        "email": "E-mail",
+        "password": "Mot de passe",
+        "confirmPassword": "Confirmer le Mot de passe",
+        "agree": "J'accepte les",
+        "terms": "Conditions d'Utilisation",
+        "and": "et la",
+        "privacy": "Politique de Confidentialité",
+        "submit": "Créer un Compte",
+        "hasAccount": "Vous avez déjà un compte ?",
+        "signIn": "Se connecter",
+        "or": "Ou continuer avec"
+    }
+}

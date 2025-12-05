@@ -37,10 +37,10 @@ export function Hero() {
                         <span className="text-primary">{t('titleHighlight')}</span>
                     </h1>
                     <p className="mx-auto mt-6 max-w-2xl text-lg text-foreground/90 md:text-xl">
-                        {t('description')}
+                        {t('tagline')}
                     </p>
                     <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-                        <Link href={`/${locale}/book`}>
+                        <Link href={`/${locale}/auth/register`}>
                             <SimpleButton variant="primary" size="lg" className="w-full sm:w-auto">
                                 {t('ctaPrimary')}
                             </SimpleButton>

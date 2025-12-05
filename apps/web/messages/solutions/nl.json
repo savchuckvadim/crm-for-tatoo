@@ -1,0 +1,162 @@
+{
+    "tattoo-artists": {
+        "title": "CRM voor Tatoeëerders",
+        "subtitle": "Alles wat je nodig hebt om je tattoo bedrijf te beheren",
+        "description": "Beheer klanten, afspraken en financiën als tatoeëerder. Focus op je kunst terwijl wij de zakelijke kant verzorgen.",
+        "features": {
+            "title": "Perfect voor Onafhankelijke Artiesten",
+            "items": [
+                {
+                    "title": "Klantenbeheer",
+                    "description": "Houd alle klanten, hun voorkeuren en tattoo geschiedenis op één plek bij."
+                },
+                {
+                    "title": "Afspraakplanning",
+                    "description": "Laat klanten 24/7 afspraken boeken. Automatische herinneringen verminderen no-shows."
+                },
+                {
+                    "title": "Financiële Tracking",
+                    "description": "Volg inkomsten, uitgaven en genereer automatisch rapporten."
+                },
+                {
+                    "title": "Portfolio Beheer",
+                    "description": "Toon je werk en laat klanten je portfolio online bekijken."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "Waarom InkSpace kiezen?",
+            "items": [
+                "Bespaar 10+ uur per week aan administratieve taken",
+                "Mis nooit een afspraak met automatische herinneringen",
+                "Professioneel klantenbeheersysteem",
+                "Mobielvriendelijk - beheer onderweg"
+            ]
+        },
+        "cta": {
+            "title": "Start je Gratis Proefperiode",
+            "description": "Geen creditcard vereist. 14 dagen gratis proefperiode.",
+            "button": "Aan de slag"
+        }
+    },
+    "studio-owners": {
+        "title": "CRM voor Studio-eigenaren",
+        "subtitle": "Beheer meerdere artiesten en locaties efficiënt",
+        "description": "Beheer meerdere artiesten en locaties. Stroomlijn operaties, volg prestaties en laat je tattoo studio bedrijf groeien.",
+        "features": {
+            "title": "Gebouwd voor Studio Beheer",
+            "items": [
+                {
+                    "title": "Multi-Artiest Beheer",
+                    "description": "Beheer schema's, klanten en prestaties voor al je artiesten."
+                },
+                {
+                    "title": "Locatiebeheer",
+                    "description": "Beheer meerdere studio locaties vanuit één dashboard."
+                },
+                {
+                    "title": "Omzetanalyse",
+                    "description": "Volg omzet per artiest, locatie en servicetype."
+                },
+                {
+                    "title": "Team Samenwerking",
+                    "description": "Deel klantinformatie en coördineer schema's binnen je team."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "Waarom InkSpace kiezen?",
+            "items": [
+                "Schaal je studio operaties moeiteloos",
+                "Real-time inzichten in bedrijfsprestaties",
+                "Gecentraliseerd beheer voor alle locaties",
+                "Geautomatiseerde rapportage bespaart wekelijks uren"
+            ]
+        },
+        "cta": {
+            "title": "Start je Gratis Proefperiode",
+            "description": "Geen creditcard vereist. 14 dagen gratis proefperiode.",
+            "button": "Aan de slag"
+        }
+    },
+    "freelancers": {
+        "title": "CRM voor Freelancers",
+        "subtitle": "Eenvoudige oplossing voor onafhankelijke tatoeëerders",
+        "description": "Eenvoudige oplossing voor onafhankelijke tatoeëerders. Alle tools die je nodig hebt zonder de complexiteit.",
+        "features": {
+            "title": "Perfect voor Solo Artiesten",
+            "items": [
+                {
+                    "title": "Eenvoudige Installatie",
+                    "description": "Begin binnen minuten. Geen complexe configuratie nodig."
+                },
+                {
+                    "title": "Betaalbare Prijzen",
+                    "description": "Plannen ontworpen voor onafhankelijke artiesten met transparante prijzen."
+                },
+                {
+                    "title": "Essentiële Functies",
+                    "description": "Alles wat je nodig hebt: klanten, afspraken en financiën."
+                },
+                {
+                    "title": "Mobiele App",
+                    "description": "Beheer je bedrijf overal met onze mobielvriendelijke interface."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "Waarom InkSpace kiezen?",
+            "items": [
+                "Betaalbare prijzen voor onafhankelijke artiesten",
+                "Eenvoudige, intuïtieve interface",
+                "Geen langetermijncontracten",
+                "Perfect voor artiesten die net beginnen"
+            ]
+        },
+        "cta": {
+            "title": "Start je Gratis Proefperiode",
+            "description": "Geen creditcard vereist. 14 dagen gratis proefperiode.",
+            "button": "Aan de slag"
+        }
+    },
+    "multi-location-studios": {
+        "title": "CRM voor Multi-Locatie Studios",
+        "subtitle": "Beheer meerdere studios vanaf één plek",
+        "description": "Beheer meerdere studios vanaf één plek. Gecentraliseerde controle, lokale flexibiliteit en enterprise-grade functies.",
+        "features": {
+            "title": "Enterprise Functies",
+            "items": [
+                {
+                    "title": "Gecentraliseerd Dashboard",
+                    "description": "Monitor alle locaties vanuit één uitgebreid dashboard."
+                },
+                {
+                    "title": "Locatiespecifieke Instellingen",
+                    "description": "Pas instellingen, prijzen en diensten aan voor elke locatie."
+                },
+                {
+                    "title": "Cross-Locatie Analyse",
+                    "description": "Vergelijk prestaties tussen locaties en identificeer kansen."
+                },
+                {
+                    "title": "Verenigde Branding",
+                    "description": "Behoud consistente branding en klantervaring op alle locaties."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "Waarom InkSpace kiezen?",
+            "items": [
+                "Schaal naar onbeperkte locaties",
+                "Enterprise-grade beveiliging en betrouwbaarheid",
+                "Toegewijd accountbeheer",
+                "Aangepaste integraties beschikbaar"
+            ]
+        },
+        "cta": {
+            "title": "Start je Gratis Proefperiode",
+            "description": "Geen creditcard vereist. 14 dagen gratis proefperiode.",
+            "button": "Aan de slag"
+        }
+    }
+}

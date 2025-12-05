@@ -1,0 +1,30 @@
+{
+    "login": {
+        "title": "Kirjaudu",
+        "subtitle": "Tervetuloa takaisin! Ole hyvä ja kirjaudu tilillesi.",
+        "email": "Sähköposti",
+        "password": "Salasana",
+        "remember": "Muista minut",
+        "forgotPassword": "Unohtuiko salasana?",
+        "submit": "Kirjaudu",
+        "noAccount": "Eikö sinulla ole tiliä?",
+        "signUp": "Rekisteröidy",
+        "or": "Tai jatka"
+    },
+    "register": {
+        "title": "Luo Tili",
+        "subtitle": "Aloita ilmainen kokeilujakso. Luottokorttia ei vaadita.",
+        "name": "Koko Nimi",
+        "email": "Sähköposti",
+        "password": "Salasana",
+        "confirmPassword": "Vahvista Salasana",
+        "agree": "Hyväksyn",
+        "terms": "Käyttöehdot",
+        "and": "ja",
+        "privacy": "Tietosuojakäytäntö",
+        "submit": "Luo Tili",
+        "hasAccount": "Onko sinulla jo tili?",
+        "signIn": "Kirjaudu",
+        "or": "Tai jatka"
+    }
+}

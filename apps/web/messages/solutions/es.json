@@ -1,0 +1,162 @@
+{
+    "tattoo-artists": {
+        "title": "CRM para Tatuadores",
+        "subtitle": "Todo lo que necesitas para gestionar tu negocio de tatuajes",
+        "description": "Gestiona clientes, citas y finanzas como tatuador. Enfócate en tu arte mientras nosotros nos encargamos del lado empresarial.",
+        "features": {
+            "title": "Perfecto para Artistas Independientes",
+            "items": [
+                {
+                    "title": "Gestión de Clientes",
+                    "description": "Lleva un registro de todos tus clientes, sus preferencias e historial de tatuajes en un solo lugar."
+                },
+                {
+                    "title": "Programación de Citas",
+                    "description": "Permite que los clientes reserven citas 24/7. Los recordatorios automáticos reducen las ausencias."
+                },
+                {
+                    "title": "Seguimiento Financiero",
+                    "description": "Rastrea ingresos, gastos y genera informes automáticamente."
+                },
+                {
+                    "title": "Gestión de Portafolio",
+                    "description": "Muestra tu trabajo y permite que los clientes naveguen por tu portafolio en línea."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "¿Por qué elegir InkSpace?",
+            "items": [
+                "Ahorra 10+ horas por semana en tareas administrativas",
+                "Nunca pierdas una cita con recordatorios automáticos",
+                "Sistema profesional de gestión de clientes",
+                "Compatible con móviles - gestiona sobre la marcha"
+            ]
+        },
+        "cta": {
+            "title": "Comienza tu Prueba Gratuita",
+            "description": "No se requiere tarjeta de crédito. 14 días de prueba gratuita.",
+            "button": "Comenzar"
+        }
+    },
+    "studio-owners": {
+        "title": "CRM para Propietarios de Estudios",
+        "subtitle": "Gestiona múltiples artistas y ubicaciones de manera eficiente",
+        "description": "Gestiona múltiples artistas y ubicaciones. Optimiza operaciones, rastrea el rendimiento y haz crecer tu negocio de estudio de tatuajes.",
+        "features": {
+            "title": "Construido para la Gestión de Estudios",
+            "items": [
+                {
+                    "title": "Gestión Multi-Artista",
+                    "description": "Gestiona horarios, clientes y rendimiento de todos tus artistas."
+                },
+                {
+                    "title": "Gestión de Ubicaciones",
+                    "description": "Administra múltiples ubicaciones de estudio desde un solo panel."
+                },
+                {
+                    "title": "Análisis de Ingresos",
+                    "description": "Rastrea ingresos por artista, ubicación y tipo de servicio."
+                },
+                {
+                    "title": "Colaboración en Equipo",
+                    "description": "Comparte información de clientes y coordina horarios en todo tu equipo."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "¿Por qué elegir InkSpace?",
+            "items": [
+                "Escala las operaciones de tu estudio sin esfuerzo",
+                "Información en tiempo real sobre el rendimiento del negocio",
+                "Gestión centralizada para todas las ubicaciones",
+                "Informes automatizados ahorran horas semanales"
+            ]
+        },
+        "cta": {
+            "title": "Comienza tu Prueba Gratuita",
+            "description": "No se requiere tarjeta de crédito. 14 días de prueba gratuita.",
+            "button": "Comenzar"
+        }
+    },
+    "freelancers": {
+        "title": "CRM para Freelancers",
+        "subtitle": "Solución simple para tatuadores independientes",
+        "description": "Solución simple para tatuadores independientes. Todas las herramientas que necesitas sin la complejidad.",
+        "features": {
+            "title": "Perfecto para Artistas en Solitario",
+            "items": [
+                {
+                    "title": "Configuración Fácil",
+                    "description": "Comienza en minutos. No se necesita configuración compleja."
+                },
+                {
+                    "title": "Precios Asequibles",
+                    "description": "Planes diseñados para artistas independientes con precios transparentes."
+                },
+                {
+                    "title": "Características Esenciales",
+                    "description": "Todo lo que necesitas: clientes, citas y finanzas."
+                },
+                {
+                    "title": "Aplicación Móvil",
+                    "description": "Gestiona tu negocio desde cualquier lugar con nuestra interfaz compatible con móviles."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "¿Por qué elegir InkSpace?",
+            "items": [
+                "Precios asequibles para artistas independientes",
+                "Interfaz simple e intuitiva",
+                "Sin contratos a largo plazo",
+                "Perfecto para artistas que recién comienzan"
+            ]
+        },
+        "cta": {
+            "title": "Comienza tu Prueba Gratuita",
+            "description": "No se requiere tarjeta de crédito. 14 días de prueba gratuita.",
+            "button": "Comenzar"
+        }
+    },
+    "multi-location-studios": {
+        "title": "CRM para Estudios Multiubicación",
+        "subtitle": "Gestiona múltiples estudios desde un solo lugar",
+        "description": "Gestiona múltiples estudios desde un solo lugar. Control centralizado, flexibilidad local y características de nivel empresarial.",
+        "features": {
+            "title": "Características Empresariales",
+            "items": [
+                {
+                    "title": "Panel Centralizado",
+                    "description": "Monitorea todas las ubicaciones desde un panel integral."
+                },
+                {
+                    "title": "Configuraciones Específicas por Ubicación",
+                    "description": "Personaliza configuraciones, precios y servicios para cada ubicación."
+                },
+                {
+                    "title": "Análisis Inter-ubicación",
+                    "description": "Compara el rendimiento entre ubicaciones e identifica oportunidades."
+                },
+                {
+                    "title": "Marca Unificada",
+                    "description": "Mantén una marca consistente y experiencia del cliente en todas las ubicaciones."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "¿Por qué elegir InkSpace?",
+            "items": [
+                "Escala a ubicaciones ilimitadas",
+                "Seguridad y confiabilidad de nivel empresarial",
+                "Gestión de cuenta dedicada",
+                "Integraciones personalizadas disponibles"
+            ]
+        },
+        "cta": {
+            "title": "Comienza tu Prueba Gratuita",
+            "description": "No se requiere tarjeta de crédito. 14 días de prueba gratuita.",
+            "button": "Comenzar"
+        }
+    }
+}

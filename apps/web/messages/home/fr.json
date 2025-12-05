@@ -3,9 +3,22 @@
         "title": "Gérez votre studio de tatouage.",
         "titleHighlight": "Facilement.",
         "description": "CRM conçu pour les tatoueurs. Tous les clients, rendez-vous et finances en un seul endroit. Optimisez les flux de travail et concentrez-vous sur la créativité.",
+        "tagline": "InkSpace — l'espace de travail pour les maîtres tatoueurs.",
         "ctaPrimary": "Commencer gratuitement",
         "ctaSecondary": "En savoir plus",
         "noCreditCard": "Sans carte de crédit • 14 jours gratuits"
+    },
+    "taglines": {
+        "1": "Votre studio. Votre espace. Votre flux.",
+        "2": "Où les studios de tatouage fonctionnent sans accroc.",
+        "3": "L'espace intelligent pour votre entreprise de tatouage.",
+        "4": "Tout ce dont votre studio a besoin — en un seul espace.",
+        "5": "L'espace central de votre studio de tatouage.",
+        "6": "Organisez vos tatouages. Faites grandir votre studio.",
+        "7": "Un espace. Des possibilités infinies.",
+        "8": "Entreprise de tatouage, enfin sous contrôle.",
+        "9": "InkSpace — l'espace de travail pour les maîtres tatoueurs.",
+        "10": "Votre espace tout-en-un pour la gestion du tatouage."
     },
     "features": {
         "title": "Fonctionnalités principales",

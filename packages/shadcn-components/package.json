@@ -61,6 +61,21 @@
             "import": "./src/components/SplashCursor.jsx",
             "types": "./src/components/SplashCursor.d.ts",
             "default": "./src/components/SplashCursor.jsx"
+        },
+        "./components/Galaxy": {
+            "import": "./src/components/Galaxy.jsx",
+            "types": "./src/components/Galaxy.d.ts",
+            "default": "./src/components/Galaxy.jsx"
+        },
+        "./components/MetallicPaint": {
+            "import": "./src/components/MetallicPaint.jsx",
+            "types": "./src/components/MetallicPaint.d.ts",
+            "default": "./src/components/MetallicPaint.jsx"
+        },
+        "./components/Prism": {
+            "import": "./src/components/Prism.jsx",
+            "types": "./src/components/Prism.d.ts",
+            "default": "./src/components/Prism.jsx"
         }
     }
 }

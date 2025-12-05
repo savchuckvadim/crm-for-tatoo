@@ -1,0 +1,162 @@
+{
+    "tattoo-artists": {
+        "title": "CRM pour Tatoueurs",
+        "subtitle": "Tout ce dont vous avez besoin pour gérer votre entreprise de tatouage",
+        "description": "Gérez les clients, rendez-vous et finances en tant que tatoueur. Concentrez-vous sur votre art pendant que nous nous occupons de l'aspect commercial.",
+        "features": {
+            "title": "Parfait pour les Artistes Indépendants",
+            "items": [
+                {
+                    "title": "Gestion des Clients",
+                    "description": "Suivez tous vos clients, leurs préférences et l'historique des tatouages en un seul endroit."
+                },
+                {
+                    "title": "Planification des Rendez-vous",
+                    "description": "Laissez les clients réserver des rendez-vous 24/7. Les rappels automatiques réduisent les absences."
+                },
+                {
+                    "title": "Suivi Financier",
+                    "description": "Suivez les revenus, les dépenses et générez des rapports automatiquement."
+                },
+                {
+                    "title": "Gestion du Portfolio",
+                    "description": "Présentez votre travail et laissez les clients parcourir votre portfolio en ligne."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "Pourquoi choisir InkSpace?",
+            "items": [
+                "Économisez 10+ heures par semaine sur les tâches administratives",
+                "Ne manquez jamais un rendez-vous avec des rappels automatiques",
+                "Système professionnel de gestion des clients",
+                "Compatible mobile - gérez en déplacement"
+            ]
+        },
+        "cta": {
+            "title": "Commencez votre Essai Gratuit",
+            "description": "Aucune carte de crédit requise. Essai gratuit de 14 jours.",
+            "button": "Commencer"
+        }
+    },
+    "studio-owners": {
+        "title": "CRM pour Propriétaires de Studios",
+        "subtitle": "Gérez plusieurs artistes et emplacements efficacement",
+        "description": "Gérez plusieurs artistes et emplacements. Rationalisez les opérations, suivez les performances et développez votre entreprise de studio de tatouage.",
+        "features": {
+            "title": "Conçu pour la Gestion de Studio",
+            "items": [
+                {
+                    "title": "Gestion Multi-Artistes",
+                    "description": "Gérez les horaires, clients et performances de tous vos artistes."
+                },
+                {
+                    "title": "Gestion des Emplacements",
+                    "description": "Gérez plusieurs emplacements de studio depuis un seul tableau de bord."
+                },
+                {
+                    "title": "Analyse des Revenus",
+                    "description": "Suivez les revenus par artiste, emplacement et type de service."
+                },
+                {
+                    "title": "Collaboration d'Équipe",
+                    "description": "Partagez les informations clients et coordonnez les horaires dans votre équipe."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "Pourquoi choisir InkSpace?",
+            "items": [
+                "Mettez à l'échelle les opérations de votre studio sans effort",
+                "Informations en temps réel sur les performances de l'entreprise",
+                "Gestion centralisée pour tous les emplacements",
+                "Rapports automatisés économisent des heures chaque semaine"
+            ]
+        },
+        "cta": {
+            "title": "Commencez votre Essai Gratuit",
+            "description": "Aucune carte de crédit requise. Essai gratuit de 14 jours.",
+            "button": "Commencer"
+        }
+    },
+    "freelancers": {
+        "title": "CRM pour Freelances",
+        "subtitle": "Solution simple pour tatoueurs indépendants",
+        "description": "Solution simple pour tatoueurs indépendants. Tous les outils dont vous avez besoin sans la complexité.",
+        "features": {
+            "title": "Parfait pour les Artistes Solo",
+            "items": [
+                {
+                    "title": "Configuration Facile",
+                    "description": "Commencez en quelques minutes. Aucune configuration complexe nécessaire."
+                },
+                {
+                    "title": "Tarifs Abordables",
+                    "description": "Plans conçus pour les artistes indépendants avec des tarifs transparents."
+                },
+                {
+                    "title": "Fonctionnalités Essentielles",
+                    "description": "Tout ce dont vous avez besoin : clients, rendez-vous et finances."
+                },
+                {
+                    "title": "Application Mobile",
+                    "description": "Gérez votre entreprise de n'importe où avec notre interface mobile."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "Pourquoi choisir InkSpace?",
+            "items": [
+                "Tarifs abordables pour les artistes indépendants",
+                "Interface simple et intuitive",
+                "Aucun contrat à long terme",
+                "Parfait pour les artistes qui commencent"
+            ]
+        },
+        "cta": {
+            "title": "Commencez votre Essai Gratuit",
+            "description": "Aucune carte de crédit requise. Essai gratuit de 14 jours.",
+            "button": "Commencer"
+        }
+    },
+    "multi-location-studios": {
+        "title": "CRM pour Studios Multi-Emplacements",
+        "subtitle": "Gérez plusieurs studios depuis un seul endroit",
+        "description": "Gérez plusieurs studios depuis un seul endroit. Contrôle centralisé, flexibilité locale et fonctionnalités de niveau entreprise.",
+        "features": {
+            "title": "Fonctionnalités Entreprise",
+            "items": [
+                {
+                    "title": "Tableau de Bord Centralisé",
+                    "description": "Surveillez tous les emplacements depuis un tableau de bord complet."
+                },
+                {
+                    "title": "Paramètres Spécifiques par Emplacement",
+                    "description": "Personnalisez les paramètres, tarifs et services pour chaque emplacement."
+                },
+                {
+                    "title": "Analyse Inter-Emplacements",
+                    "description": "Comparez les performances entre emplacements et identifiez les opportunités."
+                },
+                {
+                    "title": "Image de Marque Unifiée",
+                    "description": "Maintenez une image de marque cohérente et une expérience client dans tous les emplacements."
+                }
+            ]
+        },
+        "benefits": {
+            "title": "Pourquoi choisir InkSpace?",
+            "items": [
+                "Mettez à l'échelle vers des emplacements illimités",
+                "Sécurité et fiabilité de niveau entreprise",
+                "Gestion de compte dédiée",
+                "Intégrations personnalisées disponibles"
+            ]
+        },
+        "cta": {
+            "title": "Commencez votre Essai Gratuit",
+            "description": "Aucune carte de crédit requise. Essai gratuit de 14 jours.",
+            "button": "Commencer"
+        }
+    }
+}

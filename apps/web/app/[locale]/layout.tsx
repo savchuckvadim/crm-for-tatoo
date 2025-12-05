@@ -31,11 +31,13 @@ export default async function LocaleLayout({
 
     try {
         // Загружаем сообщения по модулям
-        const [common, navigation, home, footer] = await Promise.all([
-            import(`@/messages/${locale}.json`).then((m) => m.default).catch(() => ({ common: { brand: { title: 'Tattoo CRM', description: '' } } })),
+        const [common, navigation, home, footer, solutions, auth] = await Promise.all([
+            import(`@/messages/common/${locale}.json`).then((m) => m.default).catch(() => ({ brand: { title: 'Tattoo CRM', description: '', tagline: '' } })),
             import(`@/messages/navigation/${locale}.json`).then((m) => m.default).catch(() => ({})),
             import(`@/messages/home/${locale}.json`).then((m) => m.default).catch(() => ({})),
             import(`@/messages/footer/${locale}.json`).then((m) => m.default).catch(() => ({})),
+            import(`@/messages/solutions/${locale}.json`).then((m) => m.default).catch(() => import(`@/messages/solutions/en.json`).then((m) => m.default).catch(() => ({}))),
+            import(`@/messages/auth/${locale}.json`).then((m) => m.default).catch(() => import(`@/messages/auth/en.json`).then((m) => m.default).catch(() => ({}))),
         ]);
 
         messages = {
@@ -43,6 +45,8 @@ export default async function LocaleLayout({
             navigation,
             home,
             footer,
+            solutions,
+            auth,
         };
     } catch (error) {
         console.error('Error loading messages:', error);

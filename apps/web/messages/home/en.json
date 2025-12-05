@@ -3,9 +3,22 @@
         "title": "Manage your tattoo studio.",
         "titleHighlight": "Easily.",
         "description": "CRM built for tattoo artists. All clients, appointments, and finances in one place. Optimize workflows and focus on creativity.",
+        "tagline": "InkSpace — the workspace for tattoo masters.",
         "ctaPrimary": "Get Started Free",
         "ctaSecondary": "Learn More",
         "noCreditCard": "No credit card • 14 days free"
+    },
+    "taglines": {
+        "1": "Your studio. Your space. Your flow.",
+        "2": "Where tattoo studios run smoothly.",
+        "3": "The smart space for your ink business.",
+        "4": "Everything your studio needs — in one space.",
+        "5": "The core space of your tattoo studio.",
+        "6": "Organize your ink. Grow your studio.",
+        "7": "One space. Endless possibilities.",
+        "8": "Tattoo business, finally under control.",
+        "9": "InkSpace — the workspace for tattoo masters.",
+        "10": "Your all-in-one space for tattoo management."
     },
     "features": {
         "title": "Key Features",

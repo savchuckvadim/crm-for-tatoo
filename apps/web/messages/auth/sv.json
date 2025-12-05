@@ -1,0 +1,30 @@
+{
+    "login": {
+        "title": "Logga In",
+        "subtitle": "Välkommen tillbaka! Vänligen logga in på ditt konto.",
+        "email": "E-post",
+        "password": "Lösenord",
+        "remember": "Kom ihåg mig",
+        "forgotPassword": "Glömt lösenord?",
+        "submit": "Logga In",
+        "noAccount": "Har du inget konto?",
+        "signUp": "Registrera dig",
+        "or": "Eller fortsätt med"
+    },
+    "register": {
+        "title": "Skapa Konto",
+        "subtitle": "Starta din gratis provperiod. Inget kreditkort krävs.",
+        "name": "Fullständigt Namn",
+        "email": "E-post",
+        "password": "Lösenord",
+        "confirmPassword": "Bekräfta Lösenord",
+        "agree": "Jag godkänner",
+        "terms": "Användarvillkor",
+        "and": "och",
+        "privacy": "Integritetspolicy",
+        "submit": "Skapa Konto",
+        "hasAccount": "Har du redan ett konto?",
+        "signIn": "Logga in",
+        "or": "Eller fortsätt med"
+    }
+}

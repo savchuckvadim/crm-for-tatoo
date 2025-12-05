@@ -20,6 +20,11 @@ export const metadata: Metadata = {
     keywords: SEO_DEFAULT.keywords,
     authors: [{ name: SITE_CONFIG.name }],
     creator: SITE_CONFIG.name,
+    icons: {
+        icon: '/favicon.ico',
+        shortcut: '/favicon.ico',
+        apple: '/favicon.ico',
+    },
     openGraph: {
         type: 'website',
         locale: 'ru_RU',

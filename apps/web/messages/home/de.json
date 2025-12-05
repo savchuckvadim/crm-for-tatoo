@@ -3,9 +3,22 @@
         "title": "Verwalte dein Tattoo-Studio.",
         "titleHighlight": "Einfach.",
         "description": "CRM für Tätowierer. Alle Kunden, Termine und Finanzen an einem Ort. Optimieren Sie Arbeitsabläufe und konzentrieren Sie sich auf Kreativität.",
+        "tagline": "InkSpace — der Arbeitsplatz für Tattoo-Meister.",
         "ctaPrimary": "Kostenlos starten",
         "ctaSecondary": "Mehr erfahren",
         "noCreditCard": "Keine Kreditkarte • 14 Tage kostenlos"
+    },
+    "taglines": {
+        "1": "Dein Studio. Dein Raum. Dein Flow.",
+        "2": "Wo Tattoo-Studios reibungslos laufen.",
+        "3": "Der intelligente Raum für dein Tattoo-Geschäft.",
+        "4": "Alles, was dein Studio braucht — in einem Raum.",
+        "5": "Der zentrale Raum deines Tattoo-Studios.",
+        "6": "Organisiere deine Tattoos. Wachse mit deinem Studio.",
+        "7": "Ein Raum. Endlose Möglichkeiten.",
+        "8": "Tattoo-Geschäft, endlich unter Kontrolle.",
+        "9": "InkSpace — der Arbeitsplatz für Tattoo-Meister.",
+        "10": "Dein All-in-One-Raum für Tattoo-Verwaltung."
     },
     "features": {
         "title": "Hauptfunktionen",

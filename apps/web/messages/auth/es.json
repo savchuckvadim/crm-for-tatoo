@@ -1,0 +1,30 @@
+{
+    "login": {
+        "title": "Iniciar Sesión",
+        "subtitle": "¡Bienvenido de nuevo! Por favor, inicia sesión en tu cuenta.",
+        "email": "Correo electrónico",
+        "password": "Contraseña",
+        "remember": "Recordarme",
+        "forgotPassword": "¿Olvidaste tu contraseña?",
+        "submit": "Iniciar Sesión",
+        "noAccount": "¿No tienes una cuenta?",
+        "signUp": "Regístrate",
+        "or": "O continúa con"
+    },
+    "register": {
+        "title": "Crear Cuenta",
+        "subtitle": "Comienza tu prueba gratuita. No se requiere tarjeta de crédito.",
+        "name": "Nombre Completo",
+        "email": "Correo electrónico",
+        "password": "Contraseña",
+        "confirmPassword": "Confirmar Contraseña",
+        "agree": "Acepto los",
+        "terms": "Términos de Servicio",
+        "and": "y la",
+        "privacy": "Política de Privacidad",
+        "submit": "Crear Cuenta",
+        "hasAccount": "¿Ya tienes una cuenta?",
+        "signIn": "Iniciar sesión",
+        "or": "O continúa con"
+    }
+}

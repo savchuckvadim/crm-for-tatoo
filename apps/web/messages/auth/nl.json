@@ -1,0 +1,30 @@
+{
+    "login": {
+        "title": "Inloggen",
+        "subtitle": "Welkom terug! Log in op je account.",
+        "email": "E-mail",
+        "password": "Wachtwoord",
+        "remember": "Onthoud mij",
+        "forgotPassword": "Wachtwoord vergeten?",
+        "submit": "Inloggen",
+        "noAccount": "Heb je geen account?",
+        "signUp": "Registreren",
+        "or": "Of ga verder met"
+    },
+    "register": {
+        "title": "Account Aanmaken",
+        "subtitle": "Start je gratis proefperiode. Geen creditcard vereist.",
+        "name": "Volledige Naam",
+        "email": "E-mail",
+        "password": "Wachtwoord",
+        "confirmPassword": "Bevestig Wachtwoord",
+        "agree": "Ik ga akkoord met de",
+        "terms": "Servicevoorwaarden",
+        "and": "en het",
+        "privacy": "Privacybeleid",
+        "submit": "Account Aanmaken",
+        "hasAccount": "Heb je al een account?",
+        "signIn": "Inloggen",
+        "or": "Of ga verder met"
+    }
+}

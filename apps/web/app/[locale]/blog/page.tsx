@@ -23,9 +23,9 @@ export default function BlogPage() {
   ];
 
   return (
-    <main className="container mx-auto px-4 py-12">
+    <main className="container mx-auto px-4 py-12 pt-32">
       <h1 className="text-4xl font-bold mb-8">Blog</h1>
-      
+
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {articles.map((article) => (
           <article key={article.id} className="border rounded-lg p-6">

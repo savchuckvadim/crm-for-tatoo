@@ -33,7 +33,7 @@ export function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href={`/${locale}/book`} className="text-muted-foreground hover:text-foreground">
+                                <Link href={`/${locale}/auth/register`} className="text-muted-foreground hover:text-foreground">
                                     {t('product.register')}
                                 </Link>
                             </li>

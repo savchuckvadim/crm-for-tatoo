@@ -19,7 +19,7 @@ export function CTA() {
                         {t('description')}
                     </p>
                     <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-                        <Link href={`/${locale}/book`}>
+                        <Link href={`/${locale}/auth/register`}>
                             <SimpleButton variant="primary" size="lg" className="w-full sm:w-auto">
                                 {t('register')}
                             </SimpleButton>

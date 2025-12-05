@@ -3,9 +3,22 @@
         "title": "Hallitse tatuointistudioasi.",
         "titleHighlight": "Helposti.",
         "description": "CRM tatuoijille. Kaikki asiakkaat, varaukset ja talous yhdessä paikassa. Optimoi työnkulut ja keskity luovuuteen.",
+        "tagline": "InkSpace — työtila tatuointimestareille.",
         "ctaPrimary": "Aloita ilmaiseksi",
         "ctaSecondary": "Lue lisää",
         "noCreditCard": "Ei luottokorttia • 14 päivää ilmaiseksi"
+    },
+    "taglines": {
+        "1": "Sinun studiosi. Sinun tilasi. Sinun virtasi.",
+        "2": "Missä tatuointistudiot toimivat sujuvasti.",
+        "3": "Älykäs tila tatuointiyrityksellesi.",
+        "4": "Kaikki mitä studiosi tarvitsee — yhdessä tilassa.",
+        "5": "Tatuointistudiosi ydinosa.",
+        "6": "Järjestä tatuointisi. Kasvata studiosi.",
+        "7": "Yksi tila. Loputtomat mahdollisuudet.",
+        "8": "Tatuointiliiketoiminta, vihdoin hallinnassa.",
+        "9": "InkSpace — työtila tatuointimestareille.",
+        "10": "Sinun kaikki-yhdessä-tila tatuointinhallintaan."
     },
     "features": {
         "title": "Pääominaisuudet",
